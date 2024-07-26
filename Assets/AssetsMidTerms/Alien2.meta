@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/AssetsMidTerms/Alien2.meta
 guid: 829194d89d4f0db43a4495343b89d82b
+========
+guid: a5b9732fa5414214e9346dc8339d4a79
+>>>>>>>> d709c3596219da1bba27b890ddd2cac6b73df799:Assets/Samples.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
