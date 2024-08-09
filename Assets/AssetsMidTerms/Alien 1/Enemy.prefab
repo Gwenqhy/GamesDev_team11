@@ -13,9 +13,6 @@ GameObject:
   - component: {fileID: 3322848143179201876}
   - component: {fileID: 7781467546006600091}
   - component: {fileID: 6280461437627279671}
-  - component: {fileID: 2973832434784964388}
-  - component: {fileID: 2790956108181554443}
-  - component: {fileID: 7580061423025563082}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -148,48 +145,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2973832434784964388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1925904516580665079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3b71ee3416432345861e9b6c88f47ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 6.25
---- !u!114 &2790956108181554443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1925904516580665079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3417876d7b4cbd40b4ad6fbb46de387, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyState: 1
---- !u!95 &7580061423025563082
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1925904516580665079}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e773a54ce14894db093922602039dff0, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
