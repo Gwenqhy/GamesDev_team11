@@ -695,6 +695,7 @@ GameObject:
   - component: {fileID: 246083194}
   - component: {fileID: 246083196}
   - component: {fileID: 246083195}
+  - component: {fileID: 246083197}
   m_Layer: 0
   m_Name: city
   m_TagString: Untagged
@@ -741,7 +742,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: a16fd111e82bafd4fa527910c4bc3a5c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9fc1031fd032e5c47bca59fb66c00e3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -760,8 +761,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 246083191}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.04, y: -0.18, z: 0}
-  m_LocalScale: {x: 0.7895572, y: 0.7513513, z: 1}
+  m_LocalPosition: {x: 0.218, y: 0, z: 0}
+  m_LocalScale: {x: 0.25881886, y: 0.24845217, z: 1}
   m_Children:
   - {fileID: 58180130}
   - {fileID: 546403654}
@@ -821,6 +822,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &246083197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246083191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba716689d30f7284eb6db7b7b05e1e90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 6.25
 --- !u!1 &294240299
 GameObject:
   m_ObjectHideFlags: 0
