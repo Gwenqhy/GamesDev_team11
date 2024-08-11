@@ -4,36 +4,25 @@ using UnityEngine;
 
 public class AllyStateMachine : MonoBehaviour
 {
-    bool isShooting = false;
-    private Animator anim;
-    // Start is called before the first frame update
-    void Start()
-    {
-   
-        anim = gameObject.GetComponent<Animator>();
- 
-    }
-
+    public Animator anim;
+    public AllyDownMovement downMovement;
+    public AllyLeftMovement leftMovement;
+    public AllyRightMovement rightMovement;
+    public AllyUpMovement upMovement;
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        isShooting = true;
-
+        anim.SetBool("isShooting", true);
+        downMovement.enabled = false;
+        upMovement.enabled = false;
+        leftMovement.enabled = false;
+        rightMovement.enabled = false;
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        isShooting = false;
+        anim.SetBool("isShooting", false);
+        downMovement.enabled = true;
+        upMovement.enabled = true;
+        leftMovement.enabled = true;
+        rightMovement.enabled = true;
     }
-    void Update()
-    {
-        Debug.Log(isShooting);
-        if (isShooting)
-        {
-            
-
-        }
-    }
-        
-
-    
-
 }

@@ -121,7 +121,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &-1279506507202394220
 Animator:
   serializedVersion: 3
@@ -179,8 +179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21e809645c9dc594a8e10dd1a666dd18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 6.25
-  maxHealth: 6.25
+  health: 50
+  maxHealth: 50
 --- !u!114 &-8450273008277054191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,3 +193,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3417876d7b4cbd40b4ad6fbb46de387, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: -1279506507202394220}
+  downMovement: {fileID: 0}
+  leftMovement: {fileID: 0}
+  rightMovement: {fileID: -1200935948483261917}
+  upMovement: {fileID: 0}

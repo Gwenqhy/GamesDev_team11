@@ -5,7 +5,7 @@ using UnityEngine;
 public class AllyHealth : MonoBehaviour
 {
     public double health;
-    public double maxHealth = 6.25;
+    public double maxHealth = 50;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +15,7 @@ public class AllyHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(health);
         if (health <= 0)
         {
             Destroy(gameObject);
