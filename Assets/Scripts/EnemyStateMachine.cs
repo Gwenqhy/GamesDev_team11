@@ -4,37 +4,17 @@ using UnityEngine;
 
 public class EnemyStateMachine : MonoBehaviour
 {
-    bool isShooting = false;
-    private Animator anim;
-    private EnemyMovement movementScript;
-    // Start is called before the first frame update
-    void Start()
-    {
-   
-        anim = gameObject.GetComponent<Animator>();
-        movementScript = gameObject.GetComponent<EnemyMovement>();
-    }
-
+    public Animator anim;
+    public EnemyMovement enemyMovement;
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        isShooting = true;
+        anim.SetBool("isShooting",true);
+        enemyMovement.enabled = false;
 
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        isShooting = false;
+        anim.SetBool("isShooting", false);
+        enemyMovement.enabled = true;
     }
-    void Update()
-    {
-        Debug.Log(isShooting);
-        if (isShooting)
-        {
-            anim.Play("Shooting");
-
-        }
-    }
-        
-
-    
-
 }

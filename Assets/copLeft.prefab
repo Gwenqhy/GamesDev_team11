@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -7908218278031005861}
   - component: {fileID: 5239809535943148259}
   - component: {fileID: 1302261876349323169}
+  - component: {fileID: 2301555616709242478}
   m_Layer: 0
   m_Name: copLeft
   m_TagString: Untagged
@@ -121,7 +122,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &-4402614005701168397
 Animator:
   serializedVersion: 3
@@ -179,8 +180,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21e809645c9dc594a8e10dd1a666dd18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 6.25
-  maxHealth: 6.25
+  health: 50
+  maxHealth: 50
 --- !u!114 &1302261876349323169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,3 +194,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3417876d7b4cbd40b4ad6fbb46de387, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: -4402614005701168397}
+  downMovement: {fileID: 0}
+  leftMovement: {fileID: 7927845800978054067}
+  rightMovement: {fileID: 0}
+  upMovement: {fileID: 0}
+--- !u!114 &2301555616709242478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492220339423561187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b79c3bb3bcc390b41b66e75d38ec8341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 6.25

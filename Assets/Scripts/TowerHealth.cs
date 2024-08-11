@@ -5,7 +5,7 @@ using UnityEngine;
 public class TowerHealth : MonoBehaviour
 {
     public double health;
-    public double maxHealth = 50;
+    public double maxHealth = 500;
     // Start is called before the first frame update
     void Start()
     {
