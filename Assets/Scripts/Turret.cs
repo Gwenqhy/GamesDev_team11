@@ -8,6 +8,7 @@ public class Turret : MonoBehaviour
     [SerializeField, Range(1, 100)] private float rotationSpd = 1;
     [SerializeField] private Projectile projectilePrefab;
     [SerializeField] private Transform firept;
+    private bool isSelected = false;
     void Awake()
     {
         _camera = Camera.main;
@@ -16,14 +17,42 @@ public class Turret : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var mousePos = _camera.ScreenToWorldPoint(Input.mousePosition);
-        mousePos.z = 0;
-
-        transform.up = Vector3.MoveTowards(transform.up, mousePos, rotationSpd * Time.deltaTime);
-
-        if(Input.GetMouseButtonDown(0))
+        HandleSelection();
+        if (isSelected)
         {
-            Instantiate(projectilePrefab, firept.position, Quaternion.identity).Init(transform.up); 
+            var mousePos = _camera.ScreenToWorldPoint(Input.mousePosition);
+            mousePos.z = 0;
+
+            transform.up = Vector3.MoveTowards(transform.up, mousePos, rotationSpd * Time.deltaTime);
+
+            if (Input.GetKey(KeyCode.Space))
+            {
+                Instantiate(projectilePrefab, firept.position, Quaternion.identity).Init(transform.up);
+            }
+        }
+        
+
+
+    }
+
+    private void HandleSelection()
+    {
+ 
+        if (Input.GetMouseButtonDown(0))
+        {
+            Vector3 mousePos = _camera.ScreenToWorldPoint(Input.mousePosition);
+            mousePos.z = 0;
+
+            Collider2D collider = GetComponent<Collider2D>();
+            if (collider != null && collider.OverlapPoint(mousePos))
+            {
+                isSelected = true;
+            }
+            else
+            {
+                isSelected = false;
+
+            }
         }
     }
 }
