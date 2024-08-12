@@ -28,7 +28,13 @@ public class Turret : MonoBehaviour
             var mousePos = _camera.ScreenToWorldPoint(Input.mousePosition);
             mousePos.z = 0;
 
-            transform.up = Vector3.MoveTowards(transform.up, mousePos, rotationSpd * Time.deltaTime);
+            Vector3 direction = (mousePos - transform.position).normalized;
+
+            // Calculate the target rotation
+            Quaternion targetRotation = Quaternion.LookRotation(Vector3.forward, direction);
+
+            // Smoothly rotate towards the target rotation
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpd * Time.deltaTime);
 
             if (Input.GetKey(KeyCode.Space))
             {
