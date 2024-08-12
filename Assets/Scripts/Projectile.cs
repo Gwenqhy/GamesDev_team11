@@ -13,10 +13,12 @@ public class Projectile : MonoBehaviour
         Destroy(gameObject, 10);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        collision.transform.GetComponent<EnemyScriptForTurret>().Destroyed();
 
-        Destroy(gameObject);
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        other.transform.GetComponent<EnemyScriptForTurret>().Destroyed();
+ 
+        Destroy(gameObject);  
     }
+
 }
