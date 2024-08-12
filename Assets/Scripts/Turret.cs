@@ -12,6 +12,8 @@ public class Turret : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
     [SerializeField] private Color selectedColor = Color.red;
+    [SerializeField] private float rateOfFire = 0.5f; 
+    private float lastFiredTime = 0f;
     void Awake()
     {
         _camera = Camera.main;
@@ -36,9 +38,12 @@ public class Turret : MonoBehaviour
             // Smoothly rotate towards the target rotation
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpd * Time.deltaTime);
 
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKey(KeyCode.Space) && Time.time - lastFiredTime >= rateOfFire)
             {
                 Instantiate(projectilePrefab, firept.position, Quaternion.identity).Init(transform.up);
+
+                lastFiredTime = Time.time;
+
             }
         }
         
