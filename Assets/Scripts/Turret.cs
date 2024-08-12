@@ -6,7 +6,8 @@ public class Turret : MonoBehaviour
 {
     private Camera _camera;
     [SerializeField, Range(1, 100)] private float rotationSpd = 1;
-    // Start is called before the first frame update
+    [SerializeField] private Projectile projectilePrefab;
+    [SerializeField] private Transform firept;
     void Awake()
     {
         _camera = Camera.main;
@@ -19,5 +20,10 @@ public class Turret : MonoBehaviour
         mousePos.z = 0;
 
         transform.up = Vector3.MoveTowards(transform.up, mousePos, rotationSpd * Time.deltaTime);
+
+        if(Input.GetMouseButtonDown(0))
+        {
+            Instantiate(projectilePrefab, firept.position, Quaternion.identity).Init(transform.up); 
+        }
     }
 }
