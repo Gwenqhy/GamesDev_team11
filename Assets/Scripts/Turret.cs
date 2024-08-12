@@ -9,9 +9,14 @@ public class Turret : MonoBehaviour
     [SerializeField] private Projectile projectilePrefab;
     [SerializeField] private Transform firept;
     private bool isSelected = false;
+    private SpriteRenderer spriteRenderer;
+    private Color originalColor;
+    [SerializeField] private Color selectedColor = Color.red;
     void Awake()
     {
         _camera = Camera.main;
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        originalColor = spriteRenderer.color;
     }
 
     // Update is called once per frame
@@ -47,11 +52,12 @@ public class Turret : MonoBehaviour
             if (collider != null && collider.OverlapPoint(mousePos))
             {
                 isSelected = true;
+                spriteRenderer.color = selectedColor;
             }
             else
             {
                 isSelected = false;
-
+                spriteRenderer.color = originalColor;
             }
         }
     }
