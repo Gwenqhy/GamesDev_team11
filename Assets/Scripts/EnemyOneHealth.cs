@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyScriptForTurret : MonoBehaviour
+public class EnemyOneHealth : MonoBehaviour
 {
     [SerializeField] private int health = 100; 
 
