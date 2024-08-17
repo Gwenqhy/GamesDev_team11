@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AllyDamage : MonoBehaviour
 {
-    public double damage = 6.25;
+    public float damage = 6;
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.GetComponent<EnemyHealth>())
