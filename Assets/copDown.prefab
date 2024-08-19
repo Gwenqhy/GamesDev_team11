@@ -152,6 +152,7 @@ GameObject:
   - component: {fileID: 8098645633193433888}
   - component: {fileID: -3776865229191682376}
   - component: {fileID: 7921623108807382492}
+  - component: {fileID: 4772230768913720868}
   m_Layer: 0
   m_Name: copDown
   m_TagString: Untagged
@@ -349,6 +350,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 6.25
+--- !u!114 &4772230768913720868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5168864810947456472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e488a04791ee24641ba24c6fb817c0e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftFacingPrefab: {fileID: 0}
+  rightFacingPrefab: {fileID: 0}
+  currentLockedOnEnemy: {fileID: 0}
+  detectionRadius: 10
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  lockOnSpeed: 2
 --- !u!1 &6041927948974456227
 GameObject:
   m_ObjectHideFlags: 0

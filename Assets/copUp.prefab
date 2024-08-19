@@ -300,6 +300,7 @@ GameObject:
   - component: {fileID: 2069117921338184889}
   - component: {fileID: -3340208844394187537}
   - component: {fileID: 8217443881145507409}
+  - component: {fileID: 6609589159392556946}
   m_Layer: 0
   m_Name: copUp
   m_TagString: Untagged
@@ -497,6 +498,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 6.25
+--- !u!114 &6609589159392556946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5177036118521639899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e488a04791ee24641ba24c6fb817c0e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftFacingPrefab: {fileID: 0}
+  rightFacingPrefab: {fileID: 0}
+  currentLockedOnEnemy: {fileID: 0}
+  detectionRadius: 10
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  lockOnSpeed: 2
 --- !u!1 &7453062808930190217
 GameObject:
   m_ObjectHideFlags: 0

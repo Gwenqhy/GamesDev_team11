@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 5239809535943148259}
   - component: {fileID: 1302261876349323169}
   - component: {fileID: 2301555616709242478}
+  - component: {fileID: -401100597838486993}
   m_Layer: 0
   m_Name: copLeft
   m_TagString: Untagged
@@ -376,6 +377,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 6.25
+--- !u!114 &-401100597838486993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492220339423561187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e488a04791ee24641ba24c6fb817c0e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLockedOnEnemy: {fileID: 0}
+  detectionRadius: 10
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  lockOnSpeed: 2
 --- !u!1 &6033846290090448087
 GameObject:
   m_ObjectHideFlags: 0

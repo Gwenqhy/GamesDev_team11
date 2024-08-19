@@ -6942,6 +6942,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2069093699}
   - component: {fileID: 2069093698}
+  - component: {fileID: 2069093700}
   m_Layer: 0
   m_Name: camp1
   m_TagString: Untagged
@@ -7014,6 +7015,23 @@ Transform:
   m_Father: {fileID: 1692034595}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2069093700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069093697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e366798390a32e441806ee013c06522c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabs:
+  - {fileID: 1492220339423561187, guid: 6ca5e65960efd3d448e23ad0a8f018ba, type: 3}
+  - {fileID: 6724728756805569433, guid: 92a514e6f979de843ab305fd5e7669c2, type: 3}
+  spawnRate: 0.5
+  spawnRadius: 3
 --- !u!1 &2096651791
 GameObject:
   m_ObjectHideFlags: 0
