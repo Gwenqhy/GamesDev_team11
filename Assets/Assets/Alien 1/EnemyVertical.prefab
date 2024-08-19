@@ -165,7 +165,6 @@ GameObject:
   - component: {fileID: 5434797987088226921}
   - component: {fileID: 5067215886695262238}
   - component: {fileID: 4765200673134375391}
-  - component: {fileID: 5006033577128384998}
   m_Layer: 0
   m_Name: EnemyVertical
   m_TagString: Untagged
@@ -360,19 +359,6 @@ MonoBehaviour:
   health: 100
   maxHealth: 100
   slider: {fileID: 5483705492196771401}
---- !u!114 &5006033577128384998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4100423803017763156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eefa949c9e518b141ac058b1b8e645a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
 --- !u!1 &4177702658382266444
 GameObject:
   m_ObjectHideFlags: 0
