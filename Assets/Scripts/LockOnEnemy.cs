@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class LockOnEnemy : MonoBehaviour
 {
-    public GameObject leftFacingPrefab;    // Prefab for facing left
-    public GameObject rightFacingPrefab;
+
     public Transform currentLockedOnEnemy;    // The currently locked-on enemy
-    public float detectionRadius = 10f; // Radius to detect enemies
+    public float RangeOfDetection = 10f; // Radius to detect enemies
     public LayerMask enemyLayer;     // Layer to detect enemies
     public float lockOnSpeed = 2f;   // Speed at which the player locks onto the enemy
    
@@ -15,7 +14,7 @@ public class LockOnEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        FindClosestEnemy();
+        DetectClosestEnemy();
 
         if (currentLockedOnEnemy != null)
         {
@@ -25,24 +24,24 @@ public class LockOnEnemy : MonoBehaviour
         }
     }
 
-    void FindClosestEnemy()
+    void DetectClosestEnemy()
     {
-        Collider2D[] enemiesInRange = Physics2D.OverlapCircleAll(transform.position, detectionRadius, enemyLayer);
+        Collider2D[] enemiesInRange = Physics2D.OverlapCircleAll(transform.position, RangeOfDetection, enemyLayer);
 
-        float closestDistance = Mathf.Infinity;
-        Transform closestEnemy = null;
+        float shortestDistance = Mathf.Infinity;
+        Transform closestDetectedEnemy = null;
 
         foreach (var enemyCollider in enemiesInRange)
         {
             float distance = Vector2.Distance(transform.position, enemyCollider.transform.position);
-            if (distance < closestDistance)
+            if (distance < shortestDistance)
             {
-                closestDistance = distance;
-                closestEnemy = enemyCollider.transform;
+                shortestDistance = distance;
+                closestDetectedEnemy = enemyCollider.transform;
             }
         }
 
-        currentLockedOnEnemy = closestEnemy;
+        currentLockedOnEnemy = closestDetectedEnemy;
     }
 
     void LockOntoEnemy()
