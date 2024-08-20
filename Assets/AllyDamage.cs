@@ -10,8 +10,16 @@ public class AllyDamage : MonoBehaviour
         if (collision.gameObject.GetComponent<EnemyHealth>())
         {
             collision.gameObject.GetComponent<EnemyHealth>().health -= damage;
-            collision.gameObject.GetComponent<Alien2Health>().health -= damage;
+            
 
+        }
+        if (collision.gameObject.GetComponent<Alien2Health>())
+        {
+            collision.gameObject.GetComponent<Alien2Health>().health -= damage;
+        }
+        if (collision.gameObject.GetComponent<Alien4Health>())
+        {
+            collision.gameObject.GetComponent<Alien4Health>().health -= damage;
         }
     }
 }
