@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CampOneSpawn : MonoBehaviour
+public class Camp2Spawn : MonoBehaviour
 {
     [SerializeField]
     private GameObject[] prefabs;  // The prefab with a SpriteRenderer
@@ -17,9 +17,9 @@ public class CampOneSpawn : MonoBehaviour
 
     void Start()
     {
-        if (prefabs.Length != 2)
+        if (prefabs.Length != 1)
         {
-           
+            
             return;
         }
         StartCoroutine(SpawnRoutine());

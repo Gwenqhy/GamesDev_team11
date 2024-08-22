@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CampOneSpawn : MonoBehaviour
+public class Camp3Spawn : MonoBehaviour
 {
     [SerializeField]
     private GameObject[] prefabs;  // The prefab with a SpriteRenderer
@@ -17,9 +17,9 @@ public class CampOneSpawn : MonoBehaviour
 
     void Start()
     {
-        if (prefabs.Length != 2)
+        if (prefabs.Length != 1)
         {
-           
+
             return;
         }
         StartCoroutine(SpawnRoutine());
@@ -38,10 +38,10 @@ public class CampOneSpawn : MonoBehaviour
     {
         Vector2 spawnPosition = (Vector2)transform.position + Random.insideUnitCircle * spawnRadius;
 
-        // Choose a random prefab from the array
+    
         GameObject prefab = prefabs[Random.Range(0, prefabs.Length)];
 
-        // Instantiate the prefab at the generated position
         GameObject newObject = Instantiate(prefab, spawnPosition, Quaternion.identity);
     }
 }
+
