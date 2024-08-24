@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Alien4Attack : MonoBehaviour
 {
-    public float damage = 10;
+    public float damage = 6;
+    public Alien4Movement alien4Movement;
+    public Animator anim;
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.GetComponent<TowerHealth>())
@@ -17,5 +19,15 @@ public class Alien4Attack : MonoBehaviour
             collision.gameObject.GetComponent<AllyHealth>().health -= damage;
 
         }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        alien4Movement.enabled = false;
+        anim.SetBool("isAttacking", true);
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        alien4Movement.enabled = true;
+        anim.SetBool("isAttacking", false);
     }
 }

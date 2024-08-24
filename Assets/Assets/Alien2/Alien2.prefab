@@ -443,7 +443,7 @@ Animator:
   m_GameObject: {fileID: 4731990125279132626}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 846fd75d916ad934094f09c8a723ab14, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -479,7 +479,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f667e19a5bf81794bab86a83dc04124f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 6
+  alien2Movement: {fileID: 6166561562211489978}
+  anim: {fileID: 8633148993246313728}
 --- !u!114 &6166561562211489978
 MonoBehaviour:
   m_ObjectHideFlags: 0
