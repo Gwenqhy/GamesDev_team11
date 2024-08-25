@@ -9,20 +9,44 @@ public class AllyStateMachine : MonoBehaviour
     public AllyLeftMovement leftMovement;
     public AllyRightMovement rightMovement;
     public AllyUpMovement upMovement;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        anim.SetBool("isShooting", true);
-        downMovement.enabled = false;
-        upMovement.enabled = false;
-        leftMovement.enabled = false;
-        rightMovement.enabled = false;
+        if (anim != null)
+        {
+            anim.SetBool("isShooting", true);
+        }
+        else
+        {
+            Debug.LogError("Animator component is not assigned in the Inspector!");
+        }
+
+        DisableMovements();
     }
+
     private void OnCollisionExit2D(Collision2D collision)
     {
-        anim.SetBool("isShooting", false);
-        downMovement.enabled = true;
-        upMovement.enabled = true;
-        leftMovement.enabled = true;
-        rightMovement.enabled = true;
+        if (anim != null)
+        {
+            anim.SetBool("isShooting", false);
+        }
+
+        EnableMovements();
+    }
+
+    private void DisableMovements()
+    {
+        if (downMovement != null) downMovement.enabled = false;
+        if (upMovement != null) upMovement.enabled = false;
+        if (leftMovement != null) leftMovement.enabled = false;
+        if (rightMovement != null) rightMovement.enabled = false;
+    }
+
+    private void EnableMovements()
+    {
+        if (downMovement != null) downMovement.enabled = true;
+        if (upMovement != null) upMovement.enabled = true;
+        if (leftMovement != null) leftMovement.enabled = true;
+        if (rightMovement != null) rightMovement.enabled = true;
     }
 }

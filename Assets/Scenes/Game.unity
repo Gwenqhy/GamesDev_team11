@@ -4241,7 +4241,6 @@ GameObject:
   - component: {fileID: 1277830713}
   - component: {fileID: 1277830712}
   - component: {fileID: 1277830711}
-  - component: {fileID: 1277830715}
   - component: {fileID: 1277830717}
   - component: {fileID: 1277830716}
   m_Layer: 5
@@ -4331,21 +4330,6 @@ RectTransform:
   m_AnchoredPosition: {x: 349, y: 142}
   m_SizeDelta: {x: 698, y: 284}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1277830715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1277830710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4ab5d9e976daad4cb5432a2352e9727, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zoomingSpeed: 5
-  minimumZoom: 1
-  maximumZoom: 5
 --- !u!95 &1277830716
 Animator:
   serializedVersion: 3
