@@ -314,6 +314,9 @@ TextureImporter:
   - first:
       213: -7468591513904075215
     second: artilleryTower_51
+  - first:
+      213: -7035574693050671130
+    second: artilleryTower_52
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -826,9 +829,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 459
-        y: 662
+        y: 660
         width: 10
-        height: 29
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
