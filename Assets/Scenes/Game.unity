@@ -408,8 +408,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e44077ccd1d8ae408c427542370a127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ally: {fileID: 1492220339423561187, guid: 6ca5e65960efd3d448e23ad0a8f018ba, type: 3}
-  spawnerInterval: 10
+  Ally: {fileID: 5569906599228475297, guid: c32f8c7486f542443ad2e00bdc11a118, type: 3}
+  spawnerInterval: 3
 --- !u!1 &122262388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1447,8 +1447,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e44077ccd1d8ae408c427542370a127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ally: {fileID: 5168864810947456472, guid: a9939b25f0a1bda4b8124b4863a407d6, type: 3}
-  spawnerInterval: 10
+  Ally: {fileID: 5569906599228475297, guid: 19ee6d626968f5943ae20e78148b83cb, type: 3}
+  spawnerInterval: 3
 --- !u!1 &363138323
 GameObject:
   m_ObjectHideFlags: 0
@@ -2311,8 +2311,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e44077ccd1d8ae408c427542370a127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ally: {fileID: 5177036118521639899, guid: 2d4224b54fe709a4cb85a99c57110a71, type: 3}
-  spawnerInterval: 10
+  Ally: {fileID: 5569906599228475297, guid: b2eddd6ccb1f93849947c6682cb68ea2, type: 3}
+  spawnerInterval: 3
 --- !u!1 &554645746
 GameObject:
   m_ObjectHideFlags: 0
@@ -3295,8 +3295,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e44077ccd1d8ae408c427542370a127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ally: {fileID: 6724728756805569433, guid: 92a514e6f979de843ab305fd5e7669c2, type: 3}
-  spawnerInterval: 10
+  Ally: {fileID: 5569906599228475297, guid: 8e2bd4bd74837b64aa45269b41621741, type: 3}
+  spawnerInterval: 3
 --- !u!1 &961124271 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6002470467201033228, guid: ff480d2c30bd4c54f975ed4f38c99103,
@@ -5843,7 +5843,7 @@ Transform:
   - {fileID: 122686766}
   - {fileID: 1280449107}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1718030950 stripped
 Transform:
@@ -8404,7 +8404,7 @@ PrefabInstance:
     - target: {fileID: 7845068604746868373, guid: 69755412cb46fef46ac449fb9b2182db,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7845068604746868373, guid: 69755412cb46fef46ac449fb9b2182db,
         type: 3}
