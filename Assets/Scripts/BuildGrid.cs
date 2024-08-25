@@ -26,8 +26,11 @@
             }
         }
         #endif
+
+		public float CellSize
+        {
+            get { return _cellSize; }
+        }
     }
-
-
 
 }

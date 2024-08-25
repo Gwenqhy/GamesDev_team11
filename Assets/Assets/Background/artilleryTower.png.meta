@@ -1,0 +1,1532 @@
+fileFormatVersion: 2
+guid: 9d0ddf40162b98e44ba6ed5820dc3776
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7708920532220806285
+    second: Tilemap_0
+  - first:
+      213: 4564998844612868550
+    second: Tilemap_1
+  - first:
+      213: -4247985510503474263
+    second: Tilemap_2
+  - first:
+      213: 6623730380747189143
+    second: Tilemap_3
+  - first:
+      213: 57347999071926559
+    second: Tilemap_4
+  - first:
+      213: -9127936476011297880
+    second: Tilemap_5
+  - first:
+      213: 3775355368486569077
+    second: Tilemap_6
+  - first:
+      213: 6908732097058694728
+    second: Tilemap_7
+  - first:
+      213: -1706084216362820205
+    second: Tilemap_8
+  - first:
+      213: -762470507989373169
+    second: Tilemap_9
+  - first:
+      213: -9081831216945995436
+    second: Tilemap_10
+  - first:
+      213: 223438275047683532
+    second: Tilemap_11
+  - first:
+      213: -6019871652338619649
+    second: Tilemap_12
+  - first:
+      213: 8370124977983469142
+    second: Tilemap_13
+  - first:
+      213: 9108534716330185296
+    second: Tilemap_14
+  - first:
+      213: -5241760623638581233
+    second: Tilemap_15
+  - first:
+      213: -4071626748009554214
+    second: Tilemap_16
+  - first:
+      213: 5780841043688988522
+    second: Tilemap_17
+  - first:
+      213: -4059573561680193898
+    second: Tilemap_18
+  - first:
+      213: 1891231212010660227
+    second: Tilemap_19
+  - first:
+      213: -5705126628185277251
+    second: Tilemap_20
+  - first:
+      213: 7930762206783342680
+    second: Tilemap_21
+  - first:
+      213: -7431013412097488531
+    second: Tilemap_22
+  - first:
+      213: 2032762600551911618
+    second: Tilemap_23
+  - first:
+      213: -2646651901884672449
+    second: Tilemap_24
+  - first:
+      213: 6284401283013561674
+    second: Tilemap_25
+  - first:
+      213: 3081259622961926731
+    second: Tilemap_26
+  - first:
+      213: 2047397491309481512
+    second: Tilemap_27
+  - first:
+      213: -2037720300607281095
+    second: Tilemap_28
+  - first:
+      213: -766416283324280668
+    second: Tilemap_29
+  - first:
+      213: 6729673844453239430
+    second: Tilemap_30
+  - first:
+      213: -4893055551153389107
+    second: Tilemap_31
+  - first:
+      213: 1207436434733676485
+    second: Tilemap_32
+  - first:
+      213: -6940293328096504433
+    second: Tilemap_33
+  - first:
+      213: -2728932131879339631
+    second: Tilemap_34
+  - first:
+      213: -8082405458070816376
+    second: Tilemap_35
+  - first:
+      213: -8276140089702118719
+    second: Tilemap_36
+  - first:
+      213: 8129276003047779963
+    second: Tilemap_37
+  - first:
+      213: -22804317248558295
+    second: Tilemap_38
+  - first:
+      213: -296017328593241320
+    second: Tilemap_39
+  - first:
+      213: 7861300733336976468
+    second: Tilemap_40
+  - first:
+      213: 620092424869196206
+    second: Tilemap_41
+  - first:
+      213: -509249360570722802
+    second: Tilemap_42
+  - first:
+      213: 7148239301965277931
+    second: Tilemap_43
+  - first:
+      213: 4048463033099131646
+    second: Tilemap_44
+  - first:
+      213: 7142315096718967971
+    second: Tilemap_45
+  - first:
+      213: -1111066810694349934
+    second: Tilemap_46
+  - first:
+      213: -8636055853053499979
+    second: Tilemap_47
+  - first:
+      213: 817193682956349475
+    second: Tilemap_48
+  - first:
+      213: 1546897266561787356
+    second: Tilemap_49
+  - first:
+      213: -1633257064846851257
+    second: Tilemap_50
+  - first:
+      213: 1671066458757243634
+    second: Tilemap_51
+  - first:
+      213: 1200267945576507132
+    second: artilleryTower_0
+  - first:
+      213: -2084637439010174465
+    second: artilleryTower_1
+  - first:
+      213: -7278737590869108752
+    second: artilleryTower_2
+  - first:
+      213: -7322431412583093326
+    second: artilleryTower_3
+  - first:
+      213: -322757351033580058
+    second: artilleryTower_4
+  - first:
+      213: -1694297261933470262
+    second: artilleryTower_5
+  - first:
+      213: 8198120303238841019
+    second: artilleryTower_6
+  - first:
+      213: -6471416634068950564
+    second: artilleryTower_7
+  - first:
+      213: -344715785428721801
+    second: artilleryTower_8
+  - first:
+      213: 7620563945120654310
+    second: artilleryTower_9
+  - first:
+      213: -4266050220463450124
+    second: artilleryTower_10
+  - first:
+      213: 8615360090759147312
+    second: artilleryTower_11
+  - first:
+      213: -6236521955920607891
+    second: artilleryTower_12
+  - first:
+      213: 8860334189435371128
+    second: artilleryTower_13
+  - first:
+      213: -7815545322431504755
+    second: artilleryTower_14
+  - first:
+      213: 4392576369454349488
+    second: artilleryTower_15
+  - first:
+      213: 3393321911420886031
+    second: artilleryTower_16
+  - first:
+      213: 1062416287678195513
+    second: artilleryTower_17
+  - first:
+      213: -7815737557440715318
+    second: artilleryTower_18
+  - first:
+      213: 3777967373922996069
+    second: artilleryTower_19
+  - first:
+      213: -5511481895809109134
+    second: artilleryTower_20
+  - first:
+      213: 3582114851403119703
+    second: artilleryTower_21
+  - first:
+      213: -4256431355503806229
+    second: artilleryTower_22
+  - first:
+      213: 6387182362975744118
+    second: artilleryTower_23
+  - first:
+      213: -5682510110119510898
+    second: artilleryTower_24
+  - first:
+      213: 2028401466240544485
+    second: artilleryTower_25
+  - first:
+      213: -6150963504913251338
+    second: artilleryTower_26
+  - first:
+      213: 3941084297087607378
+    second: artilleryTower_27
+  - first:
+      213: 8090750997270943994
+    second: artilleryTower_28
+  - first:
+      213: 3992380650249253683
+    second: artilleryTower_29
+  - first:
+      213: -8143778150173223824
+    second: artilleryTower_30
+  - first:
+      213: 4267039847295036493
+    second: artilleryTower_31
+  - first:
+      213: -1711537911658659721
+    second: artilleryTower_32
+  - first:
+      213: -8374492139499556104
+    second: artilleryTower_33
+  - first:
+      213: -6292498170388837088
+    second: artilleryTower_34
+  - first:
+      213: -6487370557850710823
+    second: artilleryTower_35
+  - first:
+      213: -6189225051670316925
+    second: artilleryTower_36
+  - first:
+      213: 3124824474653199680
+    second: artilleryTower_37
+  - first:
+      213: 7868146672139144050
+    second: artilleryTower_38
+  - first:
+      213: 4031164118644441268
+    second: artilleryTower_39
+  - first:
+      213: 2275885901301880164
+    second: artilleryTower_40
+  - first:
+      213: -5795561948051877117
+    second: artilleryTower_41
+  - first:
+      213: -5302812732433721218
+    second: artilleryTower_42
+  - first:
+      213: 303847366770167171
+    second: artilleryTower_43
+  - first:
+      213: 8710607552942344573
+    second: artilleryTower_44
+  - first:
+      213: -3820820932715661256
+    second: artilleryTower_45
+  - first:
+      213: -1077346704978554334
+    second: artilleryTower_46
+  - first:
+      213: -6007723704342880735
+    second: artilleryTower_47
+  - first:
+      213: -975555713065445187
+    second: artilleryTower_48
+  - first:
+      213: 608984743702243625
+    second: artilleryTower_49
+  - first:
+      213: -821025112140334578
+    second: artilleryTower_50
+  - first:
+      213: -7468591513904075215
+    second: artilleryTower_51
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: artilleryTower_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 192
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf62063565538a010800000000000000
+      internalID: 1200267945576507132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_1
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 736
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9815a4b41e113e0800000000000000
+      internalID: -2084637439010174465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_2
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 749
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f7d6fab9babcfa90800000000000000
+      internalID: -7278737590869108752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_3
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 748
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bba2d81d6f716a90800000000000000
+      internalID: -7322431412583093326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_4
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 749
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e55ff636e5558bf0800000000000000
+      internalID: -322757351033580058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_5
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 576
+        width: 384
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acdd986fd95ac78e0800000000000000
+      internalID: -1694297261933470262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_6
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 576
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb20874faf295c170800000000000000
+      internalID: 8198120303238841019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_7
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 576
+        width: 384
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd124ccbbd8e036a0800000000000000
+      internalID: -6471416634068950564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_8
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 576
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f1d0dc1d2573bf0800000000000000
+      internalID: -344715785428721801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_9
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 713
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3e019588ea1c960800000000000000
+      internalID: 7620563945120654310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_10
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 714
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f79c4f4de1fbc4c0800000000000000
+      internalID: -4266050220463450124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_11
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 724
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03fa6cd3b58ef8770800000000000000
+      internalID: 8615360090759147312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_12
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 724
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d658d67d25c6379a0800000000000000
+      internalID: -6236521955920607891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_13
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 724
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e3b80500b36fa70800000000000000
+      internalID: 8860334189435371128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_14
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 721
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e118210fa998390800000000000000
+      internalID: -7815545322431504755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_15
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 721
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bcf9166fe095fc30800000000000000
+      internalID: 4392576369454349488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_16
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 721
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c9ac2cc40871f20800000000000000
+      internalID: 3393321911420886031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_17
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 666
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937e5a61cf57ebe00800000000000000
+      internalID: 1062416287678195513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_18
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 666
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5211fd91ce88390800000000000000
+      internalID: -7815737557440715318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_19
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 662
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f02bf5f490e6430800000000000000
+      internalID: 3777967373922996069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_20
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 614
+        width: 16
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2733d46ba684383b0800000000000000
+      internalID: -5511481895809109134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_21
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 658
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75cb88e7a7a36b130800000000000000
+      internalID: 3582114851403119703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_22
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 672
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be87c54db3e1ee4c0800000000000000
+      internalID: -4256431355503806229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_23
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 672
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6703fc4b484d3a850800000000000000
+      internalID: 6387182362975744118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_24
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 672
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8cb2cd792ba321b0800000000000000
+      internalID: -5682510110119510898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_25
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 645
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee2629f264562c10800000000000000
+      internalID: 2028401466240544485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_26
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 645
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3014f084363aaa0800000000000000
+      internalID: -6150963504913251338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_27
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 608
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252e6c5994b81b630800000000000000
+      internalID: 3941084297087607378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_28
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 608
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8d8765a2f184070800000000000000
+      internalID: 8090750997270943994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_29
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 615
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 333ff328c09c76730800000000000000
+      internalID: 3992380650249253683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_30
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 625
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07456558bec7bfe80800000000000000
+      internalID: -8143778150173223824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_31
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 608
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c25742222973b30800000000000000
+      internalID: 4267039847295036493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_32
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 587
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 770c8f366556f38e0800000000000000
+      internalID: -1711537911658659721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_33
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 584
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2f3d2e4c3d7cb80800000000000000
+      internalID: -8374492139499556104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_34
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 32
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d8d2cc04e8ca8a0800000000000000
+      internalID: -6292498170388837088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_35
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 554
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc0bf469da38f5a0800000000000000
+      internalID: -6487370557850710823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_36
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 554
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388fd308b947b1aa0800000000000000
+      internalID: -6189225051670316925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_37
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 480
+        width: 214
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d862dbd4b9d5b20800000000000000
+      internalID: 3124824474653199680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_38
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 487
+        width: 214
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b868906b5413d60800000000000000
+      internalID: 7868146672139144050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_39
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 288
+        width: 512
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b04a1b686291f730800000000000000
+      internalID: 4031164118644441268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_40
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 352
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4651b684b22959f10800000000000000
+      internalID: 2275885901301880164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 352
+        height: 373
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303d89c4d17029fa0800000000000000
+      internalID: -5795561948051877117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_42
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 263
+        width: 416
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e789ed45aef9866b0800000000000000
+      internalID: -5302812732433721218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_43
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0
+        width: 288
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d064af19b773400800000000000000
+      internalID: 303847366770167171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_44
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 232
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7986fa2b6b42e870800000000000000
+      internalID: 8710607552942344573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_45
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 232
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8383b13fa97b9fac0800000000000000
+      internalID: -3820820932715661256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_46
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 230
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222d0dd31ee7c01f0800000000000000
+      internalID: -1077346704978554334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_47
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 198
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ed2f50f1740aca0800000000000000
+      internalID: -6007723704342880735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_48
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db891286f312672f0800000000000000
+      internalID: -975555713065445187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_49
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929210ad56c837800800000000000000
+      internalID: 608984743702243625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_50
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a333fa2022b94f0800000000000000
+      internalID: -821025112140334578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artilleryTower_51
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 20
+        width: 64
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e2041a69b3a5890800000000000000
+      internalID: -7468591513904075215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

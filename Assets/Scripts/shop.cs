@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DevelopersHub.DefendersKeep;
 
 public class shop : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class shop : MonoBehaviour
 
     private GameObject objectToPlace; // Reference to the currently placing object
     private bool isPlacing = false; // Tracks whether the object is currently being placed
+    private BuildGrid buildGrid; // Reference to the grid for snapping
+    
 
     void Start()
     {
@@ -28,6 +31,13 @@ public class shop : MonoBehaviour
                 Debug.Log("Not enough gold to place the object!");
             }
         });
+        
+        // Find the BuildGrid component in the scene
+        buildGrid = FindObjectOfType<BuildGrid>();
+        if (buildGrid == null)
+        {
+            Debug.LogError("BuildGrid component not found in the scene!");
+        }
     }
 
     void Update()
@@ -51,25 +61,50 @@ public class shop : MonoBehaviour
     }
 
     void BeginPlacement()
-    {
-        // Hide Panel1
-        panel1.SetActive(false);
+		{
+		    // Hide Panel1
+		    panel1.SetActive(false);
+		
+		    // Instantiate a new object from the prefab
+		    objectToPlace = Instantiate(objectPrefab);
+		    objectToPlace.transform.localScale = Vector3.one; // Ensure it's at normal scale
+		    isPlacing = true;
+		
+		    Debug.Log("Object scale: " + objectToPlace.transform.localScale);
+		}
 
-        // Instantiate a new object from the prefab
-        objectToPlace = Instantiate(objectPrefab);
-        isPlacing = true;
-    }
 
-    void FollowCursor()
-    {
-        // Get the cursor position in world space
-        Vector3 cursorPosition = Input.mousePosition;
-        cursorPosition.z = 10f; // Set z distance from the camera (adjust as needed)
-        Vector3 worldPosition = Camera.main.ScreenToWorldPoint(cursorPosition);
+	void FollowCursor()
+	{
+	    Vector3 cursorPosition = Input.mousePosition;
+	    cursorPosition.z = Mathf.Abs(Camera.main.transform.position.z);
+	    Vector3 worldPosition = Camera.main.ScreenToWorldPoint(cursorPosition);
+	    Vector3 snappedPosition = SnapToGrid(worldPosition);
+	
+	    Debug.Log("Cursor Position: " + cursorPosition);
+	    Debug.Log("World Position: " + worldPosition);
+	    Debug.Log("Snapped Position: " + snappedPosition);
+	
+	    objectToPlace.transform.position = new Vector3(snappedPosition.x, snappedPosition.y, 0f);
+	}
+	
 
-        // Set the object's position to the cursor's position
-        objectToPlace.transform.position = new Vector3(worldPosition.x, worldPosition.y, 0f);
-    }
+    
+    Vector3 SnapToGrid(Vector3 originalPosition)
+		{
+		    if (buildGrid == null)
+		    {
+		        Debug.LogError("BuildGrid is null! Unable to snap to grid.");
+		        return originalPosition;
+		    }
+		
+		    // Calculate the snapped position based on the grid cell size
+		    float x = Mathf.Round(originalPosition.x / buildGrid.CellSize) * buildGrid.CellSize;
+		    float y = Mathf.Round(originalPosition.y / buildGrid.CellSize) * buildGrid.CellSize;
+		
+		    return new Vector3(x, y, 0f);
+		}
+
 
     void PlaceObject()
     {
