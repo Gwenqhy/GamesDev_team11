@@ -1,7 +1,5 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
 
 public class EnemySpawner2 : MonoBehaviour
 {
@@ -16,6 +14,9 @@ public class EnemySpawner2 : MonoBehaviour
 
     [SerializeField]
     private float startDelay = 60f; // Delay before starting the spawn (in seconds)
+
+    [SerializeField]
+    private Vector3 enemySize = new Vector3(1, 1, 1); // Size of the spawned enemy, set in the Inspector
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +39,10 @@ public class EnemySpawner2 : MonoBehaviour
         for (int i = 0; i < numberOfEnemies; i++)
         {
             // Spawn an enemy at the spawner's position
-            Instantiate(enemyPrefab, transform.position, Quaternion.identity);
+            GameObject spawnedEnemy = Instantiate(enemyPrefab, transform.position, Quaternion.identity);
+
+            // Adjust the size of the spawned enemy
+            spawnedEnemy.transform.localScale = enemySize;
 
             // Wait for the specified spawn interval before spawning the next enemy
             yield return new WaitForSeconds(spawnInterval);
