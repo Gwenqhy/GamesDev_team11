@@ -1,4 +1,6 @@
 ﻿
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -123,7 +125,7 @@ public class shop : MonoBehaviour
             goldManager.SpendGold(goldCost);
             Debug.Log($"Object placed, {goldCost} gold subtracted. Remaining gold: {goldManager.gold}");
 
-            // Occupy the grid cell
+            // Mark the grid cell as occupied
             buildGrid.OccupyCell(snappedPosition);
 
             // Show Panel1 after placement
@@ -146,6 +148,7 @@ public class shop : MonoBehaviour
         objectToPlace = null;
     }
 
+
     void CancelPlacement()
     {
         // Destroy the object and cancel the placement
@@ -166,6 +169,3 @@ public class shop : MonoBehaviour
         objectToPlace = null;
     }
 }
-
-
-

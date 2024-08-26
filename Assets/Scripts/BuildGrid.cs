@@ -1,4 +1,6 @@
 ﻿
+
+
 namespace DevelopersHub.DefendersKeep
 {
     using System.Collections;
@@ -10,9 +12,9 @@ namespace DevelopersHub.DefendersKeep
         [SerializeField] private int _rows = 25;
         [SerializeField] private int _columns = 25;
         [SerializeField] private float _cellSize = 2f;
-        private bool _showGrid = false; // Control grid visibility
 
         private HashSet<Vector3> occupiedCells = new HashSet<Vector3>();
+        private bool _showGrid = false;  // Control whether the grid is shown
 
         // Property to access cell size from other scripts
         public float CellSize
@@ -20,40 +22,63 @@ namespace DevelopersHub.DefendersKeep
             get { return _cellSize; }
         }
 
-        void Start()
+        public bool IsCellOccupied(Vector3 gridPosition)
         {
-            _showGrid = false; // Ensure the grid is hidden by default
+            Vector3 snappedPosition = SnapToGrid(gridPosition);
+            return occupiedCells.Contains(snappedPosition);
         }
 
-        // Method to show the grid
+        public void OccupyCell(Vector3 gridPosition)
+        {
+            Vector3 snappedPosition = SnapToGrid(gridPosition);
+            if (!occupiedCells.Contains(snappedPosition))
+            {
+                occupiedCells.Add(snappedPosition);
+                Debug.Log($"Cell occupied at position: {snappedPosition}");
+
+                // Refresh the gizmos to reflect the new occupied cell
+                #if UNITY_EDITOR
+                UnityEditor.SceneView.RepaintAll(); // Force scene view to repaint
+                #endif
+            }
+        }
+
+        public void VacateCell(Vector3 gridPosition)
+        {
+            Vector3 snappedPosition = SnapToGrid(gridPosition);
+
+            if (occupiedCells.Contains(snappedPosition))
+            {
+                occupiedCells.Remove(snappedPosition);
+                Debug.Log($"Cell vacated at position: {snappedPosition}");
+
+                // Refresh the gizmos to reflect the vacated cell
+                #if UNITY_EDITOR
+                UnityEditor.SceneView.RepaintAll(); // Force scene view to repaint
+                #endif
+            }
+        }
+
+        private Vector3 SnapToGrid(Vector3 originalPosition)
+        {
+            // Snap the position to the nearest grid point
+            float x = Mathf.Round(originalPosition.x / _cellSize) * _cellSize;
+            float y = Mathf.Round(originalPosition.y / _cellSize) * _cellSize;
+            return new Vector3(x, y, originalPosition.z);
+        }
+
         public void ShowGrid()
         {
             _showGrid = true;
         }
 
-        // Method to hide the grid
         public void HideGrid()
         {
             _showGrid = false;
         }
 
-        public bool IsCellOccupied(Vector3 gridPosition)
-        {
-            return occupiedCells.Contains(gridPosition);
-        }
-
-        public void OccupyCell(Vector3 gridPosition)
-        {
-            occupiedCells.Add(gridPosition);
-        }
-
-        public void VacateCell(Vector3 gridPosition)
-        {
-            occupiedCells.Remove(gridPosition);
-        }
-
         #if UNITY_EDITOR
-        private void OnDrawGizmos()
+        private void OnDrawGizmosSelected()
         {
             if (!_showGrid) return; // Only draw grid if _showGrid is true
 
@@ -61,13 +86,13 @@ namespace DevelopersHub.DefendersKeep
             Gizmos.color = Color.white;
             for (int i = 0; i <= _rows; i++)
             {
-                Vector3 point = transform.position + transform.forward.normalized * _cellSize * (float)i;
-                Gizmos.DrawLine(point, point + transform.right.normalized * _cellSize * (float)_columns);
+                Vector3 point = transform.position + Vector3.up * _cellSize * i;
+                Gizmos.DrawLine(point, point + Vector3.right * _cellSize * _columns);
             }
             for (int i = 0; i <= _columns; i++)
             {
-                Vector3 point = transform.position + transform.right.normalized * _cellSize * (float)i;
-                Gizmos.DrawLine(point, point + transform.forward.normalized * _cellSize * (float)_rows);
+                Vector3 point = transform.position + Vector3.right * _cellSize * i;
+                Gizmos.DrawLine(point, point + Vector3.up * _cellSize * _rows);
             }
 
             // Highlight occupied and available grid cells
@@ -78,7 +103,7 @@ namespace DevelopersHub.DefendersKeep
                     Vector3 gridPosition = transform.position + new Vector3(_cellSize * j, _cellSize * i, 0);
                     Vector3 cellCenter = gridPosition + new Vector3(_cellSize / 2, _cellSize / 2, 0); // Center the color
 
-                    if (occupiedCells.Contains(gridPosition))
+                    if (IsCellOccupied(gridPosition))
                     {
                         Gizmos.color = new Color(1f, 0f, 0f, 0.5f); // Highlight occupied grids with semi-transparent red
                     }
@@ -94,10 +119,4 @@ namespace DevelopersHub.DefendersKeep
         #endif
     }
 }
-
-
-
-
-
-
 
