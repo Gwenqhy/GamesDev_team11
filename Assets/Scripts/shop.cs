@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -49,7 +50,15 @@ public class shop : MonoBehaviour
             // Left-click to place the object
             if (Input.GetMouseButtonDown(0))
             {
-                PlaceObject();
+                Vector3 snappedPosition = objectToPlace.transform.position;
+                if (!buildGrid.IsCellOccupied(snappedPosition))
+                {
+                    PlaceObject(snappedPosition);
+                }
+                else
+                {
+                    Debug.Log("Grid cell is already occupied!");
+                }
             }
 
             // Right-click to cancel placement
@@ -61,52 +70,51 @@ public class shop : MonoBehaviour
     }
 
     void BeginPlacement()
-		{
-		    // Hide Panel1
-		    panel1.SetActive(false);
-		
-		    // Instantiate a new object from the prefab
-		    objectToPlace = Instantiate(objectPrefab);
-		    objectToPlace.transform.localScale = Vector3.one; // Ensure it's at normal scale
-		    isPlacing = true;
-		
-		    Debug.Log("Object scale: " + objectToPlace.transform.localScale);
-		}
+    {
+        // Hide Panel1
+        panel1.SetActive(false);
 
+        // Instantiate a new object from the prefab
+        objectToPlace = Instantiate(objectPrefab);
+        objectToPlace.transform.localScale = Vector3.one; // Ensure it's at normal scale
+        isPlacing = true;
 
-	void FollowCursor()
-	{
-	    Vector3 cursorPosition = Input.mousePosition;
-	    cursorPosition.z = Mathf.Abs(Camera.main.transform.position.z);
-	    Vector3 worldPosition = Camera.main.ScreenToWorldPoint(cursorPosition);
-	    Vector3 snappedPosition = SnapToGrid(worldPosition);
-	
-	    Debug.Log("Cursor Position: " + cursorPosition);
-	    Debug.Log("World Position: " + worldPosition);
-	    Debug.Log("Snapped Position: " + snappedPosition);
-	
-	    objectToPlace.transform.position = new Vector3(snappedPosition.x, snappedPosition.y, 0f);
-	}
-	
+        Debug.Log("Object scale: " + objectToPlace.transform.localScale);
 
-    
+        // Show the grid during placement
+        buildGrid.ShowGrid();
+    }
+
+    void FollowCursor()
+    {
+        Vector3 cursorPosition = Input.mousePosition;
+        cursorPosition.z = Mathf.Abs(Camera.main.transform.position.z);
+        Vector3 worldPosition = Camera.main.ScreenToWorldPoint(cursorPosition);
+        Vector3 snappedPosition = SnapToGrid(worldPosition);
+
+        Debug.Log("Cursor Position: " + cursorPosition);
+        Debug.Log("World Position: " + worldPosition);
+        Debug.Log("Snapped Position: " + snappedPosition);
+
+        objectToPlace.transform.position = new Vector3(snappedPosition.x, snappedPosition.y, 0f);
+    }
+
     Vector3 SnapToGrid(Vector3 originalPosition)
-		{
-		    if (buildGrid == null)
-		    {
-		        Debug.LogError("BuildGrid is null! Unable to snap to grid.");
-		        return originalPosition;
-		    }
-		
-		    // Calculate the snapped position based on the grid cell size
-		    float x = Mathf.Round(originalPosition.x / buildGrid.CellSize) * buildGrid.CellSize;
-		    float y = Mathf.Round(originalPosition.y / buildGrid.CellSize) * buildGrid.CellSize;
-		
-		    return new Vector3(x, y, 0f);
-		}
+    {
+        if (buildGrid == null)
+        {
+            Debug.LogError("BuildGrid is null! Unable to snap to grid.");
+            return originalPosition;
+        }
 
+        // Calculate the snapped position based on the grid cell size
+        float x = Mathf.Round(originalPosition.x / buildGrid.CellSize) * buildGrid.CellSize;
+        float y = Mathf.Round(originalPosition.y / buildGrid.CellSize) * buildGrid.CellSize;
 
-    void PlaceObject()
+        return new Vector3(x, y, 0f);
+    }
+
+    void PlaceObject(Vector3 snappedPosition)
     {
         // Check if the player still has enough gold to place the object
         if (goldManager.gold >= goldCost)
@@ -115,8 +123,14 @@ public class shop : MonoBehaviour
             goldManager.SpendGold(goldCost);
             Debug.Log($"Object placed, {goldCost} gold subtracted. Remaining gold: {goldManager.gold}");
 
+            // Occupy the grid cell
+            buildGrid.OccupyCell(snappedPosition);
+
             // Show Panel1 after placement
             panel1.SetActive(true);
+
+            // Hide the grid after placement
+            buildGrid.HideGrid();
         }
         else
         {
@@ -143,9 +157,15 @@ public class shop : MonoBehaviour
         // Show Panel1 after cancellation
         panel1.SetActive(true);
 
+        // Hide the grid after cancellation
+        buildGrid.HideGrid();
+
         isPlacing = false;
 
         // Clear the reference to the object
         objectToPlace = null;
     }
 }
+
+
+
