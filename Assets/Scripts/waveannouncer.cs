@@ -54,7 +54,7 @@ public class waveannouncer : MonoBehaviour
         else if (timer >= 140f && timer < 150f)
         {
             float timeLeft = 150f - timer;
-            waveAnnouncementText.text = "Wave 2 is spawning in " + Mathf.Ceil(timeLeft).ToString() + "s";
+            waveAnnouncementText.text = "Wave 3 is spawning in " + Mathf.Ceil(timeLeft).ToString() + "s";
         }
 
         // Wave 3 spawning at 150 seconds (2 min 30 seconds)
@@ -62,12 +62,36 @@ public class waveannouncer : MonoBehaviour
         {
             AnnounceWave(3);
         }
+                // Countdown for wave 4 (200-210 seconds)
+        else if (timer >= 200f && timer < 210f)
+        {
+            float timeLeft = 210f - timer;
+            waveAnnouncementText.text = "Wave 4 is spawning in " + Mathf.Ceil(timeLeft).ToString() + "s";
+        }
+
+        // Wave 4 spawning at 150 seconds (3 min 30 seconds)
+        else if (timer >= 210f && timer < 210f + Time.deltaTime)
+        {
+            AnnounceWave(4);
+        }
+                // Countdown for wave 5 (260-270 seconds)
+        else if (timer >= 260f && timer < 270f)
+        {
+            float timeLeft = 270f - timer;
+            waveAnnouncementText.text = "Wave 5 is spawning in " + Mathf.Ceil(timeLeft).ToString() + "s";
+        }
+
+        // Wave 5 spawning at 270 seconds (3 min 30 seconds)
+        else if (timer >= 270f && timer < 270f + Time.deltaTime)
+        {
+            AnnounceWave(5);
+        }
     }
 
     void AnnounceWave(int waveNumber)
     {
         waveAnnouncementText.text = "Wave " + waveNumber + " is spawning!";
-        StartCoroutine(ClearAnnouncementAfterDelay(3f)); // Clear the announcement after 3 seconds
+        StartCoroutine(ClearAnnouncementAfterDelay(30f)); // Clear the announcement after 30 seconds
     }
 
     IEnumerator ClearAnnouncementAfterDelay(float delay)
