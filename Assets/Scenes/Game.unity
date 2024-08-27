@@ -2039,9 +2039,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4ab5d9e976daad4cb5432a2352e9727, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoomingSpeed: 5
-  minimumZoom: 1
-  maximumZoom: 5
+  zoomingSpeed: 4
+  minimumZoom: 5
+  maximumZoom: 15
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
