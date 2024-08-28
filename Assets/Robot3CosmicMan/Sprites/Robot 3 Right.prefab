@@ -673,6 +673,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Troop 3
       objectReference: {fileID: 0}
+    - target: {fileID: 106288466720975774, guid: bcc65154705055847984fafb9f6d8030,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 106288466720975775, guid: bcc65154705055847984fafb9f6d8030,
         type: 3}
       propertyPath: m_RootOrder
