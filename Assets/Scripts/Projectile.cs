@@ -16,8 +16,9 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        other.transform.GetComponent<EnemyHealth>().TakeDamage(damage);
- 
+        other.transform.GetComponent<Alien2Health>().TakeDamage(damage);
+        other.transform.GetComponent<Alien4Health>().TakeDamage(damage);
+
         Destroy(gameObject);  
     }
 
