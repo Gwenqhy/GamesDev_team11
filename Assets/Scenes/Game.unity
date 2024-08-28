@@ -487,7 +487,7 @@ GameObject:
   - component: {fileID: 122686765}
   - component: {fileID: 122686767}
   m_Layer: 0
-  m_Name: walls
+  m_Name: wall testing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1011,7 +1011,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280855185}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -25, y: 25, z: 0}
+  m_LocalPosition: {x: -25, y: -25, z: 0}
   m_LocalScale: {x: 50, y: 50, z: 1}
   m_Children: []
   m_Father: {fileID: 2096651792}
@@ -4329,7 +4329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfc6dbd6c769e644f9467da8a839ad9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrefab: {fileID: 2069093697}
+  objectPrefab: {fileID: 122686764}
   placeButton: {fileID: 1882190934}
   goldManager: {fileID: 1260027421}
   panel1: {fileID: 1334852191}
@@ -6340,7 +6340,7 @@ GameObject:
   - component: {fileID: 1770577377}
   - component: {fileID: 1770577379}
   m_Layer: 0
-  m_Name: artillery Tower
+  m_Name: camp3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
