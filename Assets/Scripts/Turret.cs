@@ -38,7 +38,7 @@ public class Turret : MonoBehaviour
             // Smoothly rotate towards the target rotation
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpd * Time.deltaTime);
 
-            if (Input.GetKey(KeyCode.Space) && Time.time - lastFiredTime >= rateOfFire)
+            if (Input.GetKeyDown(KeyCode.Space) && Time.time - lastFiredTime >= rateOfFire)
             {
                 Instantiate(projectilePrefab, firept.position, Quaternion.identity).Init(transform.up);
 

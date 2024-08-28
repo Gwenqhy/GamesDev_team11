@@ -5,7 +5,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private float spd;
+    [SerializeField] private float spd = 10f;
     [SerializeField] private int damage = 25; 
     public void Init(Vector2 direction)
     {
@@ -16,8 +16,18 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        other.transform.GetComponent<Alien2Health>().TakeDamage(damage);
-        other.transform.GetComponent<Alien4Health>().TakeDamage(damage);
+        if (other.transform.GetComponent<Alien2Health>())
+        {
+            other.transform.GetComponent<Alien2Health>().TakeDamage(damage);
+        }
+        else if (other.transform.GetComponent<Alien4Health>())
+        {
+            other.transform.GetComponent<Alien4Health>().TakeDamage(damage);
+        }
+        //else if (other.transform.GetComponent<Alien1Health>())
+        //{
+            //other.transform.GetComponent<Alien1Health>().TakeDamage(damage);
+        //}
 
         Destroy(gameObject);  
     }
