@@ -18,9 +18,23 @@ public class EnemySpawner2 : MonoBehaviour
     [SerializeField]
     private Vector3 enemySize = new Vector3(1, 1, 1); // Size of the spawned enemy, set in the Inspector
 
+    [SerializeField]
+    private string enemyTag = "Wave1Enemy"; // Tag to assign to spawned enemies
+
+    private EnemyDefeatChecker defeatChecker;
+
     // Start is called before the first frame update
     void Start()
     {
+        // Find the EnemyDefeatChecker in the scene
+        defeatChecker = FindObjectOfType<EnemyDefeatChecker>();
+
+        // Notify the EnemyDefeatChecker about the number of enemies to be spawned
+        if (defeatChecker != null)
+        {
+            defeatChecker.AddToTotalEnemies(numberOfEnemies);
+        }
+
         // Start the spawning process after the specified delay
         StartCoroutine(SpawnEnemiesAfterDelay());
     }
@@ -43,6 +57,16 @@ public class EnemySpawner2 : MonoBehaviour
 
             // Adjust the size of the spawned enemy
             spawnedEnemy.transform.localScale = enemySize;
+
+            // Assign the enemy tag to the spawned enemy
+            spawnedEnemy.tag = enemyTag;
+
+            // Register the alien's OnDestroyed event with the defeatChecker
+            Alien2Health alienHealth = spawnedEnemy.GetComponent<Alien2Health>();
+            if (alienHealth != null && defeatChecker != null)
+            {
+                defeatChecker.RegisterSpawnedEnemy(alienHealth);
+            }
 
             // Wait for the specified spawn interval before spawning the next enemy
             yield return new WaitForSeconds(spawnInterval);

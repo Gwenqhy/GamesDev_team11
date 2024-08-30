@@ -1,9 +1,11 @@
 ﻿using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 public class Alien2Health : MonoBehaviour
 {
+    public event Action OnDestroyed;
     public float health;
     public float maxHealth = 150;
     public Slider slider;
@@ -35,7 +37,7 @@ public class Alien2Health : MonoBehaviour
     }
     public void Destroyed()
     {
+        OnDestroyed?.Invoke();
         Destroy(gameObject);
     }
 }
-

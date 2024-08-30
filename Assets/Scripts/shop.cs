@@ -12,6 +12,7 @@ public class shop : MonoBehaviour
     public GameObject objectPrefab; // The prefab of the object to be instantiated and placed
     public Button placeButton; // The button that initiates the placement process
     public Goldmanager goldManager; // Reference to the GoldManager script
+    public GameObject textBox; // Reference to the TextBox to hide during placement
 
     public GameObject panel1; // Reference to Panel1 to hide during placement and show after placement
     public int goldCost = 20; // The gold cost to place the object, changeable in the Inspector
@@ -75,6 +76,10 @@ public class shop : MonoBehaviour
     {
         // Hide Panel1
         panel1.SetActive(false);
+        if (textBox != null)
+        {
+            textBox.SetActive(false);
+        }
 
         // Instantiate a new object from the prefab
         objectToPlace = Instantiate(objectPrefab);

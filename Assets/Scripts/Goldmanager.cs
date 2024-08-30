@@ -51,6 +51,6 @@ public class Goldmanager : MonoBehaviour
 
     void UpdateGoldUI()
     {
-        goldText.text = "Gold: " + gold.ToString();
+        goldText.text = ": " + gold.ToString();
     }
 }

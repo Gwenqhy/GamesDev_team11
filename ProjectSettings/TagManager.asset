@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ignore
+  - Wave1Enemy
   layers:
   - Default
   - TransparentFX
