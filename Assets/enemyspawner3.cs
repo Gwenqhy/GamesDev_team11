@@ -36,16 +36,22 @@ public class enemyspawner3 : MonoBehaviour
 
     private IEnumerator SpawnEnemies()
     {
-        for (int i = 0; i < numberOfEnemies; i++)
-        {
-            // Spawn an enemy at the spawner's position
-            GameObject spawnedEnemy = Instantiate(enemyPrefab, transform.position, Quaternion.identity);
+    for (int i = 0; i < numberOfEnemies; i++)
+    {
+        // Spawn an enemy at the spawner's position
+        GameObject spawnedEnemy = Instantiate(enemyPrefab, transform.position, Quaternion.identity);
 
-            // Adjust the size of the spawned enemy
-            spawnedEnemy.transform.localScale = enemySize;
+        // Adjust the size of the spawned enemy
+        spawnedEnemy.transform.localScale = enemySize;
 
-            // Wait for the specified spawn interval before spawning the next enemy
-            yield return new WaitForSeconds(spawnInterval);
-        }
+        // Get the Alien2Health component of the spawned enemy
+        Alien2Health enemyHealth = spawnedEnemy.GetComponent<Alien2Health>();
+
+        // Register the alien with the AlienManager
+        AlienManager.Instance.RegisterAlien(enemyHealth);
+
+        // Wait for the specified spawn interval before spawning the next enemy
+        yield return new WaitForSeconds(spawnInterval);
+    }
     }
 }

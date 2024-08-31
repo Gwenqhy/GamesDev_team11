@@ -18,7 +18,6 @@ public class AllyHealth : MonoBehaviour
     void Update()
     {
         slider.value = health;
-        Debug.Log(health);
         if (health <= 0)
         {
             Destroy(gameObject);

@@ -20,7 +20,6 @@ public class Alien2Health : MonoBehaviour
     void Update()
     {
         slider.value = health;
-        Debug.Log(health);
         if (health <= 0)
         {
             Destroy(gameObject);
@@ -30,6 +29,7 @@ public class Alien2Health : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+        Debug.Log("Damage taken, current health: " + health);
         if (health <= 0)
         {
             Destroyed();
@@ -37,6 +37,7 @@ public class Alien2Health : MonoBehaviour
     }
     public void Destroyed()
     {
+        Debug.Log("Alien destroyed!");
         OnDestroyed?.Invoke();
         Destroy(gameObject);
     }
