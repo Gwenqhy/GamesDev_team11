@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4445625885581644407}
   - component: {fileID: 2282779765208525060}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: AllyHealthSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 2511770138665643008}
   - component: {fileID: 9012323976546125050}
   - component: {fileID: 4047631096270459232}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: AllyHealthCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 1105432891021960383}
   - component: {fileID: 1105432891021960368}
   - component: {fileID: 1105432891021960369}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wave_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 7012843438170375976}
   - component: {fileID: 8332467899221940943}
   - component: {fileID: 5053239257353634815}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -373,7 +373,7 @@ GameObject:
   - component: {fileID: 3256913274408665589}
   - component: {fileID: 3738605414010694945}
   - component: {fileID: 6014444330789062514}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -502,7 +502,7 @@ GameObject:
   - component: {fileID: 3452941152867065950}
   - component: {fileID: 7634958400681125047}
   - component: {fileID: 8747684383562613744}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Robot 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -667,7 +667,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5426581935263054152}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -705,6 +705,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Robot_idle 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7725471811268897058, guid: a3d85c3f65e69d443a87b4118c89e951,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7725471811268897061, guid: a3d85c3f65e69d443a87b4118c89e951,
         type: 3}
