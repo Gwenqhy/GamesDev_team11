@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class EnemySpawner2 : MonoBehaviour
+public class enemyspawner3 : MonoBehaviour
 {
     [SerializeField]
     private GameObject enemyPrefab; // The type of enemy to spawn, set in the Inspector

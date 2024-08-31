@@ -50,7 +50,7 @@ public class UICONTROL : MonoBehaviour
 
     public void QuitGame()
     {
-        Time.timeScale = 1f;
+        SceneManager.LoadSceneAsync("MainMenu");
         // Uncomment the following line when building the game
         // Application.Quit();
     }
