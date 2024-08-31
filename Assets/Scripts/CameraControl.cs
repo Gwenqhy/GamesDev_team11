@@ -10,7 +10,7 @@
     {
         Vector3 MouseScrollStartingPosition;
         Camera gameCamera;
-        int mapSize = 25;
+        int mapSize = 9;
 
 
         public float zoomingSpeed = 3f; //speed at which the camera zooms in and out
