@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 546192327369053393}
   - component: {fileID: 4266753008262357774}
   - component: {fileID: 2145621621780602570}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 8198807460432041546}
   - component: {fileID: 4144372672739250334}
   - component: {fileID: 6815011736332286223}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: EnemyHealthCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3467411661761483716}
   - component: {fileID: 843524485172616135}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: EnemyHealthSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,7 +270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6070375749102013911}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +313,7 @@ GameObject:
   - component: {fileID: -7116664191664649873}
   - component: {fileID: 2600380269819674343}
   - component: {fileID: 6166561562211489978}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Alien2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -507,7 +507,7 @@ GameObject:
   - component: {fileID: 6388407367335387600}
   - component: {fileID: 8539838993996825897}
   - component: {fileID: 3886917772988621137}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}

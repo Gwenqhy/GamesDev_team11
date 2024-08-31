@@ -17,7 +17,7 @@ public class Camp3Spawn : MonoBehaviour
 
     void Start()
     {
-        if (prefabs.Length != 1)
+        if (prefabs.Length != 3)
         {
 
             return;
@@ -41,7 +41,7 @@ public class Camp3Spawn : MonoBehaviour
     
         GameObject prefab = prefabs[Random.Range(0, prefabs.Length)];
 
-        GameObject newObject = Instantiate(prefab, spawnPosition, Quaternion.identity);
+        Instantiate(prefab, spawnPosition, Quaternion.identity);
     }
 }
 
