@@ -498,6 +498,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   lockOnSpeed: 2
+  spriteRenderer: {fileID: 2978707286730180388}
 --- !u!114 &-9212723153087201931
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ public class LockOnEnemy : MonoBehaviour
     Vector2 posLastFrame;
     Vector2 posThisFrame;
     Direction movementDirection;
+    public SpriteRenderer spriteRenderer;
     // Update is called once per frame
     void Update()
     {
@@ -22,11 +23,11 @@ public class LockOnEnemy : MonoBehaviour
         movementDirection = CheckMoveDirection();
         if (movementDirection == Direction.Left)
         {
-            GetComponent<SpriteRenderer>().flipX = true;
+            spriteRenderer.flipX = true;
         }
         else if (movementDirection == Direction.Right)
         {
-            GetComponent<SpriteRenderer>().flipX = false;
+            spriteRenderer.flipX = false;
         }
         DetectClosestEnemy();
 
