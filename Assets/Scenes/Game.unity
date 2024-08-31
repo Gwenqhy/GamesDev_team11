@@ -4753,7 +4753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfc6dbd6c769e644f9467da8a839ad9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrefab: {fileID: 0}
+  objectPrefab: {fileID: 1398132536}
   placeButton: {fileID: 452359710}
   goldManager: {fileID: 1260027421}
   textBox: {fileID: 1345256707}
@@ -4771,7 +4771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfc6dbd6c769e644f9467da8a839ad9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrefab: {fileID: 0}
+  objectPrefab: {fileID: 1873455604}
   placeButton: {fileID: 2129199318}
   goldManager: {fileID: 1260027421}
   textBox: {fileID: 1720625230}
@@ -4789,7 +4789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfc6dbd6c769e644f9467da8a839ad9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrefab: {fileID: 0}
+  objectPrefab: {fileID: 1866513175}
   placeButton: {fileID: 26808865}
   goldManager: {fileID: 1260027421}
   textBox: {fileID: 1576242666}
@@ -5921,6 +5921,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350436427}
   m_CullTransparentMesh: 0
+--- !u!1 &1398132536 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 744555143772849910, guid: 02bdd6e263d1fbd4584c3dac94d46285,
+    type: 3}
+  m_PrefabInstance: {fileID: 1905352507}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1415944163
 GameObject:
   m_ObjectHideFlags: 0
@@ -7840,6 +7846,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aae542b8a65f39b49b008fa689ce9804, type: 3}
+--- !u!1 &1866513175 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4322355975858681874, guid: dbab90a908a72c643861ca43008d5eb0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1058730880}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1873455604 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2971235765822972818, guid: 258bb0af8856977459f355b899a4887f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1205833013}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1903246667
 GameObject:
   m_ObjectHideFlags: 0
