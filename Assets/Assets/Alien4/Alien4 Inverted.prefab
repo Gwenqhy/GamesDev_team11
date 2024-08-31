@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4139433974268215838}
   - component: {fileID: 8813494171553676143}
   - component: {fileID: 5863565194737202034}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 4034154197869472816}
   - component: {fileID: 3574546534631175487}
   - component: {fileID: 1102917350526277126}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: EnemyHealthCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 8968589852524618274}
   - component: {fileID: 5620809477782000957}
   - component: {fileID: 8026101127099696000}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,7 +257,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2006085043886591778}
   - component: {fileID: 1346006666674667117}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: EnemyHealthSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -344,7 +344,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5837573849153946882}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -387,7 +387,7 @@ GameObject:
   - component: {fileID: 287000532709720861}
   - component: {fileID: 8125155410547975604}
   - component: {fileID: 7782597183857397854}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Alien4 Inverted
   m_TagString: Untagged
   m_Icon: {fileID: 0}

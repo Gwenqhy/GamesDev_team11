@@ -17,7 +17,7 @@ public class Camp2Spawn : MonoBehaviour
 
     void Start()
     {
-        if (prefabs.Length != 1)
+        if (prefabs.Length != 2)
         {
             
             return;
