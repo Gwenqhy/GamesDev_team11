@@ -83,7 +83,7 @@ public class shop : MonoBehaviour
 
         // Instantiate a new object from the prefab
         objectToPlace = Instantiate(objectPrefab);
-        objectToPlace.transform.localScale = Vector3.one; // Ensure it's at normal scale
+        /*objectToPlace.transform.localScale = Vector3.one;*/ // Ensure it's at normal scale
         isPlacing = true;
 
         Debug.Log("Object scale: " + objectToPlace.transform.localScale);
