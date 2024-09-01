@@ -100,8 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabs:
   - {fileID: 5177036118521639899, guid: 2d4224b54fe709a4cb85a99c57110a71, type: 3}
-  - {fileID: 6724728756805569433, guid: 92a514e6f979de843ab305fd5e7669c2, type: 3}
-  spawnRate: 100
+  spawnRate: 2
   spawnRadius: 3
 --- !u!136 &744555143772849906
 CapsuleCollider:
