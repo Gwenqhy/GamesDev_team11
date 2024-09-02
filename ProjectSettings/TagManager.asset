@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ignore
   - Wave1Enemy
+  - Enemy
   layers:
   - Default
   - TransparentFX
