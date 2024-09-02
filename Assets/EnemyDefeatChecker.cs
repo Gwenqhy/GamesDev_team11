@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class EnemyDefeatChecker : MonoBehaviour
 {
     public GameObject victoryPanel; // The panel to display when all enemies are defeated
-    public float checkDelay = 30f; // Delay before starting to check for the win condition
-
-    private int totalEnemies = 0; // Total number of enemies that should be defeated
-    private int enemiesDefeated = 0; // Count of enemies defeated
-    private bool checkingForWin = false;
+    public float checkDelay = 10f; // Delay before starting to check for the win condition
+    public float checkInterval = 1f; // Interval between each check
+    public Button retryButton;
+    public Button quitButton;
+    
 
     void Start()
     {
@@ -19,44 +21,30 @@ public class EnemyDefeatChecker : MonoBehaviour
             victoryPanel.SetActive(false); // Ensure the panel is hidden at the start
         }
 
-        // Start the coroutine that will enable checking for the win condition after a delay
-        StartCoroutine(StartCheckingForWinCondition());
+        InvokeRepeating("CheckEnemies", checkDelay, checkInterval);
+        quitButton.onClick.AddListener(QuitGame);
+        retryButton.onClick.AddListener(RestartGame);
     }
 
     // Coroutine to start checking for the win condition after a delay
-    private IEnumerator StartCheckingForWinCondition()
+    private void CheckEnemies()
     {
-        yield return new WaitForSeconds(checkDelay); // Wait for the specified delay
-        checkingForWin = true; // Enable win condition checking
-    }
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
-    // Call this method from the spawner to add to the total enemy count
-    public void AddToTotalEnemies(int number)
-    {
-        totalEnemies += number;
-    }
-
-    // Call this method when an enemy is registered by the spawner
-    public void RegisterSpawnedEnemy(Alien2Health alienHealth)
-    {
-        alienHealth.OnDestroyed += OnEnemyDestroyed;
-    }
-
-    // Method called when an enemy is destroyed
-    private void OnEnemyDestroyed()
-    {
-        if (!checkingForWin)
-            return; // Do nothing if we aren't yet checking for the win condition
-
-        enemiesDefeated++;
-
-        // Check if all enemies have been defeated
-        if (enemiesDefeated >= totalEnemies)
+        // Check if there are any enemies left in the scene
+        if (enemies.Length == 0)
         {
+            Debug.Log("No enemies left in the scene.");
             ShowVictoryPanel();
+            CancelInvoke("CheckForEnemies"); // Stop further checks
+        }
+        else
+        {
+            Debug.Log("Enemies still exist in the scene.");
         }
     }
 
+    
     // Method to display the victory panel
     private void ShowVictoryPanel()
     {
@@ -65,5 +53,17 @@ public class EnemyDefeatChecker : MonoBehaviour
         {
             victoryPanel.SetActive(true); // Show the victory panel
         }
+    }
+
+    public void RestartGame()
+    {
+        Debug.Log("Restarting the game...");
+        Time.timeScale = 1f; // Reset time scale to normal speed
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // Reload the current scene
+    }
+
+    public void QuitGame()
+    {
+        SceneManager.LoadSceneAsync("MainMenu");//return to main menu
     }
 }

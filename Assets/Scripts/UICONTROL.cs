@@ -51,8 +51,6 @@ public class UICONTROL : MonoBehaviour
     public void QuitGame()
     {
         SceneManager.LoadSceneAsync("MainMenu");
-        // Uncomment the following line when building the game
-        // Application.Quit();
     }
 
     void TogglePanel1()

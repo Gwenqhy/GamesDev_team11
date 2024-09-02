@@ -50,9 +50,6 @@ public class gameover : MonoBehaviour
 
     public void QuitGame()
     {
-        Time.timeScale = 1f;
-        Debug.Log("Quitting the game...");
-        // Uncomment the following line when building the game
-        // Application.Quit();
+        SceneManager.LoadSceneAsync("MainMenu");//return to main menu
     }
 }

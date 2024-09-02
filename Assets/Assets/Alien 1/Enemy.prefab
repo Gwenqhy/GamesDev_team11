@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: -6770967844768622794}
   m_Layer: 8
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -175,10 +175,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
-  downMovement: {fileID: 0}
-  leftMovement: {fileID: 0}
-  rightMovement: {fileID: 0}
-  upMovement: {fileID: 0}
 --- !u!95 &7580061423025563082
 Animator:
   serializedVersion: 3
