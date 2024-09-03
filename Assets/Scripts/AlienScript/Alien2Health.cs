@@ -9,9 +9,11 @@ public class Alien2Health : MonoBehaviour
     public float health;
     public float maxHealth = 150;
     public Slider slider;
+    private Goldmanager goldManager;
     // Start is called before the first frame update
     void Start()
     {
+        
         health = maxHealth;
         slider.maxValue = maxHealth;
     }
@@ -23,6 +25,20 @@ public class Alien2Health : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
+            GameObject GameManagerWithGoldScript = GameObject.Find("Game manager");
+            if (GameManagerWithGoldScript != null)
+            {
+                goldManager = GameManagerWithGoldScript.GetComponent<Goldmanager>();
+                if(goldManager != null)
+                {
+                    goldManager.AddGold(2);
+                    Debug.Log("2 Gold added");
+                }
+                else
+                {
+                    Debug.LogError("Gold could not be added");
+                }
+            }
         }
     }
 
