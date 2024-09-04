@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using System;
 public class Goldmanager : MonoBehaviour
 {
     public float gold = 0f; // The current amount of gold
@@ -51,6 +51,6 @@ public class Goldmanager : MonoBehaviour
 
     void UpdateGoldUI()
     {
-        goldText.text = ": " + gold.ToString();
+        goldText.text = ": " + Math.Floor(gold).ToString();
     }
 }
