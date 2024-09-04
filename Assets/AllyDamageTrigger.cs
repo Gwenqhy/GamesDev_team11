@@ -7,9 +7,9 @@ public class AllyDamageTrigger : MonoBehaviour
     public float damage = 6;
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<EnemyHealth>())
+        if (collision.gameObject.GetComponent<EnemyOneHealth>())
         {
-            collision.gameObject.GetComponent<EnemyHealth>().health -= damage;
+            collision.gameObject.GetComponent<EnemyOneHealth>().health -= damage;
         }
         if (collision.gameObject.GetComponent<Alien2Health>())
         {

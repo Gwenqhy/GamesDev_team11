@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Goldmanager : MonoBehaviour
 {
-    public int gold = 0; // The current amount of gold
+    public float gold = 0f; // The current amount of gold
     public Text goldText; // Reference to the UI Text component that displays the gold
     public float goldIncreaseInterval = 1f; // Time interval for gold increase (1 second)
 
@@ -30,13 +30,13 @@ public class Goldmanager : MonoBehaviour
         }
     }
 
-    public void AddGold(int amount)
+    public void AddGold(float amount)
     {
         gold += amount;
         UpdateGoldUI();
     }
 
-    public void SpendGold(int amount)
+    public void SpendGold(float amount)
     {
         if (gold >= amount)
         {

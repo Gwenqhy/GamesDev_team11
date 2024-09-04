@@ -313,6 +313,8 @@ GameObject:
   - component: {fileID: -7116664191664649873}
   - component: {fileID: 2600380269819674343}
   - component: {fileID: 6166561562211489978}
+  - component: {fileID: 4931274701324224952}
+  - component: {fileID: -1669999786606455736}
   m_Layer: 10
   m_Name: Alien2
   m_TagString: Enemy
@@ -464,9 +466,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e477e4db83fde5648969a3113222fc03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 150
-  maxHealth: 150
+  health: 125
+  maxHealth: 125
   slider: {fileID: 843524485172616135}
+  gold: 0.2
 --- !u!114 &2600380269819674343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,6 +499,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1018280210466593934, guid: b828f2ab3cc87074abd1e146e6d7559c, type: 3}
   speed: 0.5
+--- !u!114 &4931274701324224952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4731990125279132626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f1fafbcded7ab48b255ac243e3dccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLockedOnAlly: {fileID: 0}
+  RangeOfDetection: 10
+  AllyLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  lockOnSpeed: 1
+  spriteRenderer: {fileID: 4647293832293189480}
+--- !u!114 &-1669999786606455736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4731990125279132626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f1fafbcded7ab48b255ac243e3dccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLockedOnAlly: {fileID: 0}
+  RangeOfDetection: 10
+  AllyLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  lockOnSpeed: 1
+  spriteRenderer: {fileID: 4647293832293189480}
 --- !u!1 &4975975482924500229
 GameObject:
   m_ObjectHideFlags: 0

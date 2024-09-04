@@ -578,7 +578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d30b04dbd26c4374ba32b0c609e717f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 4
 --- !u!61 &8159714411664561733
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -643,8 +643,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21e809645c9dc594a8e10dd1a666dd18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 80
-  maxHealth: 80
+  health: 100
+  maxHealth: 100
   slider: {fileID: 2282779765208525060}
 --- !u!114 &8747684383562613744
 MonoBehaviour:

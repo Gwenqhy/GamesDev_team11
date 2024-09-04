@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5324824998405887562}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6273049147155745366}
   - component: {fileID: 4850840158110565927}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: EnemyHealthSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 720064265317095273}
   - component: {fileID: 4372039100167965911}
   - component: {fileID: 4454871466973147123}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: EnemyHealthCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +234,7 @@ GameObject:
   - component: {fileID: 8821724994337677605}
   - component: {fileID: 7350238236287894687}
   - component: {fileID: 149122943418557544}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -308,7 +308,7 @@ GameObject:
   - component: {fileID: 9183099095750593102}
   - component: {fileID: 4293893148986452745}
   - component: {fileID: 5766070736878746685}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -387,8 +387,10 @@ GameObject:
   - component: {fileID: 4790068065436082600}
   - component: {fileID: 147872104244742982}
   - component: {fileID: 4966980888598899155}
-  - component: {fileID: 6182610125832275153}
-  m_Layer: 8
+  - component: {fileID: 3512712160628919784}
+  - component: {fileID: -3095300406913578897}
+  - component: {fileID: -6265003700136957299}
+  m_Layer: 10
   m_Name: EnemyHorizontal
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -491,7 +493,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.1, y: 1.55}
+    oldSize: {x: 0.44, y: 0.62}
     newSize: {x: 1.1, y: 1.55}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -533,7 +535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3b71ee3416432345861e9b6c88f47ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 6.25
+  damage: 5
 --- !u!95 &147872104244742982
 Animator:
   serializedVersion: 3
@@ -567,7 +569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 147872104244742982}
   enemyMovement: {fileID: 4981457924047311832}
---- !u!114 &6182610125832275153
+--- !u!114 &3512712160628919784
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -576,9 +578,48 @@ MonoBehaviour:
   m_GameObject: {fileID: 8180435389257500795}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d82ba846e84109e41aec437a876ddb64, type: 3}
+  m_Script: {fileID: 11500000, guid: d3f1fafbcded7ab48b255ac243e3dccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  maxHealth: 100
+  currentLockedOnAlly: {fileID: 0}
+  RangeOfDetection: 10
+  AllyLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  lockOnSpeed: 1
+  spriteRenderer: {fileID: 3399446444196298993}
+--- !u!114 &-3095300406913578897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8180435389257500795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f1fafbcded7ab48b255ac243e3dccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLockedOnAlly: {fileID: 0}
+  RangeOfDetection: 10
+  AllyLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  lockOnSpeed: 1
+  spriteRenderer: {fileID: 3399446444196298993}
+--- !u!114 &-6265003700136957299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8180435389257500795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eefa949c9e518b141ac058b1b8e645a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 80
+  maxHealth: 80
   slider: {fileID: 4850840158110565927}
+  gold: 0.2

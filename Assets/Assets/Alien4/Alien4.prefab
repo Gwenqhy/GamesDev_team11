@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 8769252243619266410}
   - component: {fileID: 759803006181300675}
   - component: {fileID: 1605625511814196265}
+  - component: {fileID: -2217354758564746552}
+  - component: {fileID: -2563814155323927097}
   m_Layer: 10
   m_Name: Alien4
   m_TagString: Enemy
@@ -199,6 +201,44 @@ MonoBehaviour:
   damage: 10
   alien4Movement: {fileID: 8769252243619266410}
   anim: {fileID: 759803006181300675}
+--- !u!114 &-2217354758564746552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817671643797220134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f1fafbcded7ab48b255ac243e3dccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLockedOnAlly: {fileID: 0}
+  RangeOfDetection: 10
+  AllyLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  lockOnSpeed: 1
+  spriteRenderer: {fileID: 3897339707501728879}
+--- !u!114 &-2563814155323927097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817671643797220134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f1fafbcded7ab48b255ac243e3dccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLockedOnAlly: {fileID: 0}
+  RangeOfDetection: 10
+  AllyLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  lockOnSpeed: 1
+  spriteRenderer: {fileID: 3897339707501728879}
 --- !u!1 &3392943019910027470
 GameObject:
   m_ObjectHideFlags: 0

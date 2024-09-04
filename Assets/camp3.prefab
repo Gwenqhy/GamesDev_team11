@@ -98,9 +98,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4322355975858681872}
   - component: {fileID: 4322355975858681875}
-  - component: {fileID: 4322355975858681873}
   - component: {fileID: 4322355975858681878}
   - component: {fileID: 3983520843886833902}
+  - component: {fileID: -2156566709022727037}
+  - component: {fileID: 5688712103613980674}
   m_Layer: 0
   m_Name: camp3
   m_TagString: Untagged
@@ -174,20 +175,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!136 &4322355975858681873
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4322355975858681874}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.15625
-  m_Height: 0.96875
-  m_Direction: 1
-  m_Center: {x: 0.00000166893, y: -0.0000030994415, z: 0}
 --- !u!114 &4322355975858681878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,7 +191,7 @@ MonoBehaviour:
   - {fileID: 5177036118521639899, guid: 2d4224b54fe709a4cb85a99c57110a71, type: 3}
   - {fileID: 5569906599228475297, guid: b2eddd6ccb1f93849947c6682cb68ea2, type: 3}
   - {fileID: 5569906599228475297, guid: 064565e54b2976d46bf2be86bac2b4e5, type: 3}
-  spawnRate: 2
+  spawnRate: 6
   spawnRadius: 3
 --- !u!114 &3983520843886833902
 MonoBehaviour:
@@ -218,9 +205,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5d6b4912a79bcc4da5a78104123609c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 150
-  maxHealth: 150
+  health: 8000
+  maxHealth: 8000
   slider: {fileID: 7092385419925020231}
+--- !u!70 &-2156566709022727037
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4322355975858681874}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.3125, y: 0.96874994}
+  m_Direction: 0
+--- !u!50 &5688712103613980674
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4322355975858681874}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &4334650983007133317
 GameObject:
   m_ObjectHideFlags: 0

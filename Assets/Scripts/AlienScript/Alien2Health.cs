@@ -10,6 +10,7 @@ public class Alien2Health : MonoBehaviour
     public float maxHealth = 150;
     public Slider slider;
     private Goldmanager goldManager;
+    public float gold = 10f;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,8 +32,7 @@ public class Alien2Health : MonoBehaviour
                 goldManager = GameManagerWithGoldScript.GetComponent<Goldmanager>();
                 if(goldManager != null)
                 {
-                    goldManager.AddGold(2);
-                    Debug.Log("2 Gold added");
+                    goldManager.AddGold(gold);
                 }
                 else
                 {
