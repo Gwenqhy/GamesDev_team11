@@ -583,15 +583,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'CAMP 1
+  m_text: 'Turret
 
     20G
 
-    HP:
+    HP: 40000
 
-    ATK:
-
-'
+    Spawns unit 1'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -618,8 +616,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4141,11 +4139,11 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'CAMP 1
 
-    20G
+    10G
 
-    HP: 15000 /100
+    HP: 15000
 
-    ATK: 10'
+    Spawns unit 1'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7164,7 +7162,6 @@ MonoBehaviour:
   button2: {fileID: 788516294}
   closeButton2: {fileID: 1656783130}
   restartButton: {fileID: 2057503516}
-  settingsButton: {fileID: 1759927140}
   quitButton: {fileID: 2071012583}
 --- !u!114 &1447796646
 MonoBehaviour:
@@ -7523,11 +7520,11 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'CAMP 2
 
-    20G
+    15G
 
-    HP: 20000 /100 /80
+    HP: 20000
 
-    ATK: 10/8'
+    Spawns unit 1/2'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9080,13 +9077,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'CAMP 1
+  m_text: 'CAMP 3
 
     20G
 
-    HP:
+    HP: 40000
 
-    ATK:
+    Spawns unit 1/2/3
 
 '
   m_isRightToLeft: 0
@@ -9115,8 +9112,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
