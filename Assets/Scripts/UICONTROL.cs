@@ -12,7 +12,6 @@ public class UICONTROL : MonoBehaviour
     public Button button2;
     public Button closeButton2;
     public Button restartButton;
-    public Button settingsButton;
     public Button quitButton;
 
     // Start is called before the first frame update
@@ -28,7 +27,6 @@ public class UICONTROL : MonoBehaviour
         button2.onClick.AddListener(TogglePanel2);
         closeButton2.onClick.AddListener(() => HidePanel(panel2));
         restartButton.onClick.AddListener(RestartGame);
-        settingsButton.onClick.AddListener(OpenSettings);
         quitButton.onClick.AddListener(QuitGame);
     }
 
@@ -38,19 +36,9 @@ public class UICONTROL : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Reload the current scene
     }
 
-    public void OpenSettings()
-    {
-
-    }
-
-    public void CloseSettings()
-    {
-        
-    }
-
     public void QuitGame()
     {
-        SceneManager.LoadSceneAsync("MainMenu");
+        SceneManager.LoadSceneAsync("MainMenu");// load main menu scene
     }
 
     void TogglePanel1()
@@ -97,7 +85,7 @@ public class UICONTROL : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         // Check if the Esc key is pressed

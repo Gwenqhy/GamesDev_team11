@@ -18,7 +18,8 @@ public class gameover : MonoBehaviour
         {
             gameOverPanel.SetActive(false); // Ensure the panel is hidden at the start
         }
-
+        
+        // Add listeners to the buttons
         quitButton.onClick.AddListener(QuitGame);
         retryButton.onClick.AddListener(RestartGame);
     }

@@ -6,9 +6,8 @@ using System;
 public class Goldmanager : MonoBehaviour
 {
     public float gold = 0f; // The current amount of gold
-    public Text goldText; // Reference to the UI Text component that displays the gold
-    public float goldIncreaseInterval = 1f; // Time interval for gold increase (1 second)
-
+    public Text goldText; // Text component gold
+    public float goldIncreaseInterval = 1f; // Time interval for gold increase (1/second)
     private float timer = 0f;
 
     void Start()
@@ -30,20 +29,20 @@ public class Goldmanager : MonoBehaviour
         }
     }
 
-    public void AddGold(float amount)
+    public void AddGold(float amount) //function to add gold
     {
         gold += amount;
         UpdateGoldUI();
     }
 
-    public void SpendGold(float amount)
+    public void SpendGold(float amount) // function to spend gold
     {
         if (gold >= amount)
         {
             gold -= amount;
             UpdateGoldUI();
         }
-        else
+        else //not enough gold
         {
             Debug.Log("Not enough gold!");
         }

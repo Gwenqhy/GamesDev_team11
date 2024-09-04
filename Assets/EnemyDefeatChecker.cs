@@ -10,8 +10,8 @@ public class EnemyDefeatChecker : MonoBehaviour
     public GameObject victoryPanel; // The panel to display when all enemies are defeated
     public float checkDelay = 10f; // Delay before starting to check for the win condition
     public float checkInterval = 1f; // Interval between each check
-    public Button retryButton;
-    public Button quitButton;
+    public Button retryButton; //button component
+    public Button quitButton; //button component
     
 
     void Start()
@@ -22,6 +22,8 @@ public class EnemyDefeatChecker : MonoBehaviour
         }
 
         InvokeRepeating("CheckEnemies", checkDelay, checkInterval);
+
+        // Add listeners to the buttons
         quitButton.onClick.AddListener(QuitGame);
         retryButton.onClick.AddListener(RestartGame);
     }
