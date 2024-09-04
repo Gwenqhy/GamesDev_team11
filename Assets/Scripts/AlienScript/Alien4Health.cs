@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Alien4Health : MonoBehaviour
 {
     public event Action OnDestroyed;
+    public float gold=0.2f;
     public float health;
     public float maxHealth = 150;
     public Slider slider;
@@ -31,7 +32,7 @@ public class Alien4Health : MonoBehaviour
                 goldManager = GameManagerWithGoldScript.GetComponent<Goldmanager>();
                 if (goldManager != null)
                 {
-                    goldManager.AddGold(4);
+                    goldManager.AddGold(gold);
                     Debug.Log("2 Gold added");
                 }
                 else

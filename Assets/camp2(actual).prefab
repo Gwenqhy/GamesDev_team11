@@ -336,7 +336,7 @@ MonoBehaviour:
   prefabs:
   - {fileID: 5177036118521639899, guid: 2d4224b54fe709a4cb85a99c57110a71, type: 3}
   - {fileID: 5569906599228475297, guid: b2eddd6ccb1f93849947c6682cb68ea2, type: 3}
-  spawnRate: 6
+  spawnRate: 5
   spawnRadius: 3
 --- !u!114 &8559644798947366899
 MonoBehaviour:
