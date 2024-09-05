@@ -11,6 +11,8 @@ public class UICONTROL : MonoBehaviour
     public Button button1;
     public Button button2;
     public Button closeButton2;
+    public Slider volumeSlider;
+
     public Button restartButton;
     public Button quitButton;
 
@@ -45,11 +47,11 @@ public class UICONTROL : MonoBehaviour
     {
         if (panel1.activeSelf)
         {
-            HidePanel(panel1); // Hide panel2 if it is already active
+            HidePanel(panel1); // Hide panel1 if it is already active
         }
         else
         {
-            ShowPanel(panel1); // Show panel2 if it is not active
+            ShowPanel(panel1); // Show panel1 if it is not active
         }
     }
 
@@ -84,6 +86,12 @@ public class UICONTROL : MonoBehaviour
             Time.timeScale = 1f; // Resumes the game
         }
     }
+
+    public void AdjustVolume(float volume)
+    {
+        AudioListener.volume = volume;
+    }
+
 
     
     void Update()

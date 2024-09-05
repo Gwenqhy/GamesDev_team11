@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class PauseMenu : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
     public GameObject settingsPanel;
+    public Slider volumeSlider;
     void Start()
     {
         pauseMenuUI.SetActive(false);
@@ -43,6 +46,14 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
+
+    public void AdjustVolume(float volume)
+    {
+        AudioListener.volume = volume;
+        PlayerPrefs.SetFloat("Volume", volume); // Save the volume preference
+    }
+
+
 
     public void RestartGame()
     {
