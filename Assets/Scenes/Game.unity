@@ -1348,6 +1348,7 @@ MonoBehaviour:
   health: 300000
   maxHealth: 300000
   slider: {fileID: 293600842}
+  damageSound: {fileID: 8300000, guid: a7eef3a1d67a21a46b11bdbd1643a492, type: 3}
 --- !u!58 &246083195
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1398,7 +1399,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 6.25
-  damageSound: {fileID: 8300000, guid: a7eef3a1d67a21a46b11bdbd1643a492, type: 3}
 --- !u!82 &246083198
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1411,7 +1411,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: 4cb637ac8686a4f45a89599e7c9fcec5,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: a7eef3a1d67a21a46b11bdbd1643a492, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -5234,7 +5234,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: ec63dce1e06684e51969fda535cbc967, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.843
   m_Pitch: 1
   Loop: 1
   Mute: 0
