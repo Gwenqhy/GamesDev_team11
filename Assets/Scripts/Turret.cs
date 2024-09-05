@@ -14,6 +14,10 @@ public class Turret : MonoBehaviour
     [SerializeField] private Color selectedColor = Color.red;
     [SerializeField] private float rateOfFire = 0.5f; 
     private float lastFiredTime = 0f;
+
+    // Reference to the audio source
+    [SerializeField] private AudioSource fireSound;
+
     void Awake()
     {
         _camera = Camera.main;
@@ -40,20 +44,19 @@ public class Turret : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Space) && Time.time - lastFiredTime >= rateOfFire)
             {
+                // Fire projectile
                 Instantiate(projectilePrefab, firept.position, Quaternion.identity).Init(transform.up);
 
-                lastFiredTime = Time.time;
+                // Play the fire sound
+                fireSound.Play();
 
+                lastFiredTime = Time.time;
             }
         }
-        
-
-
     }
 
     private void HandleSelection()
     {
- 
         if (Input.GetMouseButtonDown(0))
         {
             Vector3 mousePos = _camera.ScreenToWorldPoint(Input.mousePosition);
