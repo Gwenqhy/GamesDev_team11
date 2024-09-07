@@ -26,6 +26,8 @@ public class EnemyDefeatChecker : MonoBehaviour
 
     public AudioSource gameMusicAudioSource; // Reference to the AudioSource for the general game music
 
+    private bool hasVictorySoundPlayed = false; // Flag to ensure victory sound is played once
+
     void Start()
     {
         if (victoryPanel != null)
@@ -56,7 +58,7 @@ public class EnemyDefeatChecker : MonoBehaviour
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
         // Check if there are any enemies left in the scene
-        if (enemies.Length == 0)
+        if (enemies.Length == 0 && !hasVictorySoundPlayed) // Check that enemies are gone and victory sound has not played
         {
             Debug.Log("No enemies left in the scene.");
             ShowVictoryPanel();
@@ -83,10 +85,11 @@ public class EnemyDefeatChecker : MonoBehaviour
             gameMusicAudioSource.volume = 0f; // Set the volume to 0 or pause the music
         }
 
-        // Play the victory sound
-        if (victoryAudioSource != null && victorySound != null)
+        // Play the victory sound once
+        if (victoryAudioSource != null && victorySound != null && !hasVictorySoundPlayed)
         {
             victoryAudioSource.PlayOneShot(victorySound);
+            hasVictorySoundPlayed = true; // Ensure victory sound is not played again
         }
     }
 
@@ -107,7 +110,7 @@ public class EnemyDefeatChecker : MonoBehaviour
     public void QuitGame()
     {
         Debug.Log("Returning to Main Menu...");
-        
+
         // Restore the game music volume (optional if you want to keep music in the menu)
         if (gameMusicAudioSource != null)
         {

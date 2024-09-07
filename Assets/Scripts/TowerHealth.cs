@@ -76,7 +76,12 @@ public class TowerHealth : MonoBehaviour
     {
         if (damageSound != null && audioSource != null)
         {
-            audioSource.PlayOneShot(damageSound);  // Play damage sound
+            // Check if the sound is already playing
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(damageSound);  // Play damage sound
+            }
         }
     }
+
 }

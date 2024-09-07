@@ -4,7 +4,6 @@ pauses the game, and plays a game over sound. It also allows players
 to restart the game or quit to the main menu, with optional audio feedback 
 for button clicks and the ability to mute or lower game music upon game over.*/
 
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,8 +14,8 @@ public class gameover : MonoBehaviour
 {
     public GameObject objectToCheck; // Reference to the GameObject to monitor
     public GameObject gameOverPanel; // Reference to the Game Over panel
-    public Button retryButton; //refrence to retrybutton
-    public Button quitButton; //refrence to quit button
+    public Button retryButton; // Reference to retry button
+    public Button quitButton; // Reference to quit button
 
     // Audio-related variables
     public AudioSource audioSource; // Reference to the AudioSource component for game over sound
@@ -25,6 +24,8 @@ public class gameover : MonoBehaviour
 
     // Reference to the general game music AudioSource
     public AudioSource gameMusicAudioSource;
+
+    private bool hasGameOverSoundPlayed = false; // Flag to track if the game over sound has been played
 
     void Start()
     {
@@ -57,7 +58,7 @@ public class gameover : MonoBehaviour
 
     void Update()
     {
-        if (objectToCheck == null)
+        if (objectToCheck == null && !hasGameOverSoundPlayed) // Ensure the sound is only played once
         {
             Debug.Log("The object has been destroyed. Showing game over panel.");
             ShowGameOverPanel();
@@ -78,10 +79,11 @@ public class gameover : MonoBehaviour
             gameMusicAudioSource.volume = 0f; // Set the volume to 0 or pause the music
         }
 
-        // Play game over sound
-        if (audioSource != null && gameOverSound != null)
+        // Play game over sound once
+        if (audioSource != null && gameOverSound != null && !hasGameOverSoundPlayed)
         {
             audioSource.PlayOneShot(gameOverSound);
+            hasGameOverSoundPlayed = true; // Ensure the sound is not played again
         }
     }
 
@@ -112,7 +114,7 @@ public class gameover : MonoBehaviour
         SceneManager.LoadSceneAsync("MainMenu"); // Return to main menu
     }
 
-    //  Play button click sound
+    // Play button click sound
     void PlayButtonClickSound()
     {
         if (audioSource != null && buttonClickSound != null)
