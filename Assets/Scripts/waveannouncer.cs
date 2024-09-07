@@ -95,7 +95,7 @@ public class waveannouncer : MonoBehaviour
     {
         float timeLeft = waveSpawnTime - timer;
 
-        waveAnnouncementText.text = "Wave is spawning in " + Mathf.Ceil(timeLeft).ToString() + "s";
+        waveAnnouncementText.text = "Wave spawning in " + Mathf.Ceil(timeLeft).ToString() + "s";
 
         // Play sound at specific countdown points (10 seconds and 5 seconds)
         if (Mathf.Ceil(timeLeft) == 10f)
@@ -110,7 +110,7 @@ public class waveannouncer : MonoBehaviour
 
     void AnnounceWave(int waveNumber)
     {
-        waveAnnouncementText.text = "Wave " + waveNumber + " is spawning!";
+        waveAnnouncementText.text = "Wave " + waveNumber + " spawning!";
         audioSource.PlayOneShot(waveSpawningSound); // Play wave spawning sound
         StartCoroutine(ClearAnnouncementAfterDelay(30f)); // Clear the announcement after 30 seconds
     }
