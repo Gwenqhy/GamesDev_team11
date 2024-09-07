@@ -55,6 +55,7 @@ public class Turret : MonoBehaviour
         }
     }
 
+    //function to handle activation of turret
     private void HandleSelection()
     {
         if (Input.GetMouseButtonDown(0))
