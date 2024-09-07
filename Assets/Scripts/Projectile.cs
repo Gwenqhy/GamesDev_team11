@@ -16,6 +16,7 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        //conditionals to deal damage to the objects with the scripts listed below
         if (other.transform.GetComponent<EnemyHealth>())
         {
             other.transform.GetComponent<EnemyHealth>().TakeDamage(damage);

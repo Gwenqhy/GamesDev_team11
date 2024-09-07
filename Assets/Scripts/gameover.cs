@@ -15,8 +15,8 @@ public class gameover : MonoBehaviour
 {
     public GameObject objectToCheck; // Reference to the GameObject to monitor
     public GameObject gameOverPanel; // Reference to the Game Over panel
-    public Button retryButton;
-    public Button quitButton;
+    public Button retryButton; //refrence to retrybutton
+    public Button quitButton; //refrence to quit button
 
     // Audio-related variables
     public AudioSource audioSource; // Reference to the AudioSource component for game over sound

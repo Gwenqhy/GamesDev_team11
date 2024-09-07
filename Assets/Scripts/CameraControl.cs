@@ -31,6 +31,7 @@
             Zooming();
         }
 
+        //handle moving of screen
         private void ScrollButtonHandling()
         {
             if (Input.GetMouseButtonDown(2))
@@ -46,6 +47,7 @@
             }
         }
 
+        //handle edge scrolling 
         private void EdgeScrollhandling()
         {
             int distTop = gameCamera.pixelHeight - (int)Input.mousePosition.y;
