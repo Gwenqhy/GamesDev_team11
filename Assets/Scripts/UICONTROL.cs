@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class UICONTROL : MonoBehaviour
 {
-    public GameObject panel1;
-    public GameObject panel2;
-    public Button button1;
-    public Button button2;
-    public Button closeButton2;
-    public Slider volumeSlider;
+    public GameObject panel1;//refrence to panel 1
+    public GameObject panel2;//refrence to panel 2
+    public Button button1;//refrence to button
+    public Button button2;//refrence to button
+    public Button closeButton2;//refrence to button
+    public Slider volumeSlider;//refrence to slider
 
     public Button restartButton;
     public Button quitButton;
