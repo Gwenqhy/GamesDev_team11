@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class shoptext : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public GameObject textBox; // Assign your Text or TextMeshPro GameObject here
+    public GameObject textBox; //refrence to textbox
     public Vector2 offset = new Vector2(0, 50f); // Offset above the mouse position
 
     // Start is called before the first frame update
@@ -18,7 +18,7 @@ public class shoptext : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         }
     }
 
-    // This method is called when the pointer enters the button area
+    // This method called when the pointer enters the button area
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (textBox != null)
@@ -28,7 +28,7 @@ public class shoptext : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         }
     }
 
-    // This method is called when the pointer exits the button area
+    // This method called when the pointer exits the button area
     public void OnPointerExit(PointerEventData eventData)
     {
         if (textBox != null)
