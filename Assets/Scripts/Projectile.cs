@@ -23,7 +23,7 @@ public class Projectile : MonoBehaviour
         }
         else if (other.transform.GetComponent<Alien2Health>())
         {
-            other.transform.GetComponent<Alien4Health>().TakeDamage(damage);
+            other.transform.GetComponent<Alien2Health>().TakeDamage(damage);
         }
         else if (other.transform.GetComponent<Alien4Health>())
         {
