@@ -435,7 +435,7 @@ MonoBehaviour:
     type: 3}
   firept: {fileID: 7807281418768494700}
   selectedColor: {r: 0, g: 1, b: 0, a: 1}
-  rateOfFire: 0.5
+  rateOfFire: 0.8
   fireSound: {fileID: 6552805185522203192}
 --- !u!61 &7807281418452872742
 BoxCollider2D:
