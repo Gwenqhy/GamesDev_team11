@@ -1,4 +1,9 @@
-﻿
+﻿/*This script manages the Game Over logic in the game. 
+It monitors a GameObject's existence, triggers the Game Over panel when it's destroyed, 
+pauses the game, and plays a game over sound. It also allows players 
+to restart the game or quit to the main menu, with optional audio feedback 
+for button clicks and the ability to mute or lower game music upon game over.*/
+
 
 using System.Collections;
 using System.Collections.Generic;

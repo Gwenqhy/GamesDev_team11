@@ -1,4 +1,9 @@
-﻿
+﻿/*This script manages the settings menu for the game, 
+allowing players to adjust resolution, volume, graphics quality, 
+and fullscreen mode. It initializes available resolutions, 
+applies user selections, and updates the settings in real-time using Unity's 
+AudioMixer, Screen, and QualitySettings APIs.*/
+
 
 using System.Collections;
 using System.Collections.Generic;
@@ -90,7 +95,7 @@ public class SettingsMenu : MonoBehaviour
         // Choose the full-screen mode based on whether fullscreen is enabled
         if (isFullscreen)
         {
-            Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen; // Change this to FullScreenWindow if you prefer windowed full-screen
+            Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen; 
         }
         else
         {

@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/*This script manages the pause menu functionality in the game. 
+It allows the player to pause and resume the game, adjust volume settings, 
+restart the level, and open or close a settings panel. 
+It also handles game quitting, with the option to save volume preferences 
+using PlayerPrefs.*/
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;

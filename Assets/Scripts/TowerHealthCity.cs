@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/*This script manages the health of the city. 
+It updates a health slider UI, reduces health during gameplay, and 
+triggers the destruction of the city when health reaches zero. 
+When the city is destroyed, the Game Over panel is displayed, and the 
+city object is removed from the game.*/
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

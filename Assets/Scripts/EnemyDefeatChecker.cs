@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿/*This script checks for the defeat of all enemies in the scene, 
+triggering a victory condition. It continuously checks for remaining 
+enemies after a delay and shows a victory panel when no enemies remain. 
+The script also handles pausing the game, playing a victory sound, 
+muting game music, and providing options to restart the game or quit 
+to the main menu, with audio feedback for each action.*/
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
