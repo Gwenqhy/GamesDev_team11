@@ -329,8 +329,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5d6b4912a79bcc4da5a78104123609c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 300
-  maxHealth: 300
+  health: 40000
+  maxHealth: 40000
   slider: {fileID: 5308810805022131183}
   damageSound: {fileID: 0}
 --- !u!1 &7807281418452872738
