@@ -154,7 +154,7 @@ MonoBehaviour:
   numberOfEnemies: 40
   spawnInterval: 1
   startDelay: 95
-  enemySize: {x: 1, y: 1, z: 1}
+  enemySize: {x: 3, y: 3, z: 3}
 --- !u!1 &5634033516058134709
 GameObject:
   m_ObjectHideFlags: 0
