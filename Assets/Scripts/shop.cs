@@ -106,7 +106,7 @@ public class shop : MonoBehaviour
             buildGrid.OccupyCell(snappedPosition);
 
             // Reassign the object to its default layer (for normal interactions)
-            objectToPlace.layer = LayerMask.NameToLayer("Default");  
+            objectToPlace.layer = LayerMask.NameToLayer("Structure");  
 
             // Show Panel1 after placement
             panel1.SetActive(true);
