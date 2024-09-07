@@ -15,6 +15,7 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //handle enemy movement direction
         Vector2 direction = player.transform.position - transform.position;
         direction.Normalize();
         transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
