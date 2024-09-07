@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 15
   m_Sprite: {fileID: -7488752689242664983, guid: b407f0ae148700344b71e8b12341b35a,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -118,6 +118,7 @@ MonoBehaviour:
   health: 15000
   maxHealth: 15000
   slider: {fileID: 8501314635275307342}
+  damageSound: {fileID: 0}
 --- !u!70 &-3085043132060046456
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
